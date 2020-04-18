@@ -15,10 +15,10 @@ const IndexPage = () => {
       <Jumbotron />
 
       <CdcInfo>
-        <div>
+        <div style={{ margin: "0px" }}>
           <h2>The CDC recommends that everyone wear cloth masks.</h2>
         </div>
-        <div style={{ fontSize: `20px` }}>
+        <div style={{ fontSize: `20px`, margin: "0px" }}>
           <p>
             There are many websites and organizations funneling masks to
             healthcare facilities (which is great). Our goal is to get face
@@ -219,7 +219,6 @@ const ReachOut = styled.section`
   }
 
   div {
-    width: 70%;
     @media (min-width: 700px) {
       width: 50%;
     }
