@@ -14,9 +14,9 @@ const Header = ({ open, setOpen }) => {
       </Link>
       <div style={{ display: "flex" }}>
         <NavLinks>
-          <Link to="/faq">FAQ</Link>
-          <Link to="/directory">Request</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/mask-faq">FAQ</Link>
+          <Link to="/mask-directory">Request</Link>
+          <Link to="/contact-us">Contact</Link>
         </NavLinks>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />

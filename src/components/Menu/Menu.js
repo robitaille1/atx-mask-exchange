@@ -9,13 +9,13 @@ const Menu = ({ open, setOpen }) => {
       <Link to="/" onClick={() => setOpen(!open)}>
         Home
       </Link>
-      <Link to="/faq" onClick={() => setOpen(!open)}>
+      <Link to="/mask-faq" onClick={() => setOpen(!open)}>
         FAQ
       </Link>
-      <Link to="/directory" onClick={() => setOpen(!open)}>
+      <Link to="/mask-directory" onClick={() => setOpen(!open)}>
         Request a Mask
       </Link>
-      <Link to="/contact" onClick={() => setOpen(!open)}>
+      <Link to="/contact-us" onClick={() => setOpen(!open)}>
         Contact
       </Link>
       <img

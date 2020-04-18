@@ -156,7 +156,7 @@ const faq = () => (
       <div>
         <h3>I need a mask! Where can I get a mask in Austin?</h3>
         <p>
-          Check out our <Link to="/directory">mask directory!</Link> We are
+          Check out our <Link to="/mask-directory">mask directory!</Link> We are
           keeping a running list of all the mask providers in the area.
         </p>
       </div>

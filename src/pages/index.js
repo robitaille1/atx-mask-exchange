@@ -39,7 +39,7 @@ const IndexPage = () => {
           </p>
 
           <Link
-            to="/faq"
+            to="/mask-faq"
             style={{
               color: `white`,
               textDecoration: `none`,
@@ -60,7 +60,7 @@ const IndexPage = () => {
             will reach out to you as soon as possible.
           </p>
           <Link
-            to="/directory"
+            to="/mask-directory"
             style={{
               color: `white`,
               textDecoration: `none`,
@@ -87,7 +87,7 @@ const IndexPage = () => {
           </p>
 
           <Link
-            to="/contact"
+            to="/contact-us"
             style={{
               color: `white`,
               textDecoration: `none`,

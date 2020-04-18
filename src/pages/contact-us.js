@@ -17,7 +17,7 @@ const Contact = () => (
           maker, have resources, or anything related to the cause! If you are
           looking for masks for your or your family, please fill out the form on
           the{" "}
-          <Link style={{ color: "black" }} to="/directory">
+          <Link style={{ color: "black" }} to="/mask-directory">
             directory page
           </Link>{" "}
           and a mask maker will get in contact with you.
