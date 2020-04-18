@@ -20,15 +20,8 @@ const Header = ({ siteTitle }) => {
         <NavLinks>
           <Link to="/faq">FAQ</Link>
           <Link to="/directory">Request</Link>
-          {/* <Link to="/">Gallery</Link> */}
-          {/* <Link to="/">Blog</Link> */}
           <Link to="/contact">Contact</Link>
-          {/* <button>Donate</button> */}
         </NavLinks>
-        {/* <div>
-          <Burger open={open} setOpen={setOpen} />
-          <Menu open={open} setOpen={setOpen} />
-        </div> */}
       </div>
     </HeaderItem>
   )
@@ -50,7 +43,6 @@ const HeaderItem = styled.header`
   margin: 0 auto;
   padding: 2rem;
   justify-content: space-between;
-  /* width: 100%; */
   h1 {
     margin: 0;
     font-size: 32px;
@@ -62,19 +54,15 @@ const HeaderItem = styled.header`
   }
 `
 const NavLinks = styled.div`
-  /* display: none; */
-
-  /* @media (min-width: 700px) { */
   display: flex;
   flex-direction: column;
   font-size: 16px;
   align-items: center;
-  /* } */
 
   @media (min-width: 620px) {
     display: inline;
     flex-direction: none;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   a {
