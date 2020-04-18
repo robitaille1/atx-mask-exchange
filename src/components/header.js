@@ -2,12 +2,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 import React from "react"
-// import Burger from "../components/Burger/Burger"
-// import Menu from "../components/Menu/Menu"
-
 const Header = ({ siteTitle }) => {
-  // const [open, setOpen] = useState(false)
-
   return (
     <HeaderItem>
       <h1>
