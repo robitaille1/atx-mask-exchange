@@ -166,7 +166,7 @@ const Content = styled.div`
 
 const ContentImg = styled.img`
   width: 100%;
-
+  height: auto;
   @media (min-width: 700px) {
     width: 40%;
   }

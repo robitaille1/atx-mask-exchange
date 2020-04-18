@@ -42,7 +42,7 @@ const directory = () => (
       frameBorder="0"
       scrolling="yes"
       seamless="seamless"
-      height="801"
+      height="1000"
       width="100%"
       title="Request a mask - form"
     ></iframe>
@@ -57,6 +57,7 @@ const HeaderDiv = styled.div`
 
   img {
     width: 100%;
+    height: auto;
   }
   div {
     width: 100%;
