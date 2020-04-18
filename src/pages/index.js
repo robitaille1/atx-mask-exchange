@@ -1,9 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-// import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import Jumbotron from "../components/Jumbotron/Jumbotron"
 import MaskImg from "../images/masks.jpg"
@@ -29,7 +28,8 @@ const IndexPage = () => {
       </CdcInfo>
 
       <MaskInfo>
-        <div style={{ width: "50%" }}>
+        <ContentImg src={MaskImg} alt="masks" />
+        <Content>
           <h3>What You Should Know About Face Masks</h3>
           <p>
             Layers, fabrics, filters, patterns and comfortability all make a
@@ -37,24 +37,47 @@ const IndexPage = () => {
             may have. If your question is not addressed, do not hesitate to
             contact us.
           </p>
-          <button>Learn More</button>
-        </div>
-        <img style={{ width: "40%" }} src={MaskImg} alt="masks" />
+          <button>
+            <Link
+              to="/faq"
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            >
+              Learn More
+            </Link>
+          </button>
+        </Content>
       </MaskInfo>
       <Where>
-        <img style={{ width: "40%" }} src={LiamImg} alt="Liam making masks" />
-        <div style={{ width: "50%" }}>
+        <Content>
           <h3>Where Can I Get A Face Mask In Austin?</h3>
           <p>
             We are keeping a running list of all the mask creators in the
             Austin, Texas area. Reach out to one of the providers and they will
             get back to you with instructions on how to get masks.
           </p>
-          <button>Learn More</button>
-        </div>
+          <button>
+            <Link
+              to="/directory"
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            >
+              Learn More
+            </Link>
+          </button>
+        </Content>
+        <ContentImg
+          style={{ marginTop: "30px" }}
+          src={LiamImg}
+          alt="Liam making masks"
+        />
       </Where>
       <ReachOut>
-        <div style={{ width: "50%", margin: "0px auto" }}>
+        <div style={{ margin: "0px auto" }}>
           <h3>Reach out</h3>
           <p>
             If you would like masks for you or your family, please go to the
@@ -63,7 +86,17 @@ const IndexPage = () => {
             any other questions - get in touch! We will get back to you as soon
             as we can.
           </p>
-          <button>Contact</button>
+          <button>
+            <Link
+              to="/contact"
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            >
+              Reach Out
+            </Link>
+          </button>
         </div>
       </ReachOut>
     </Layout>
@@ -74,7 +107,7 @@ export default IndexPage
 
 const CdcInfo = styled.section`
   background: lightgray;
-  width: 100%;
+  /* width: 100%; */
   padding: 3rem 2rem;
 
   div {
@@ -83,14 +116,45 @@ const CdcInfo = styled.section`
     margin: 20px;
     line-height: 1.5;
   }
+
+  h2 {
+    font-size: 22px;
+    @media (min-width: 700px) {
+      font-size: 37px;
+    }
+  }
 `
 
 const MaskInfo = styled.section`
   margin-top: 40px;
-  width: 100%;
+  /* width: 100%; */
   padding: 2rem;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  /* justify-content: space-between; */
+
+  @media (min-width: 700px) {
+    display: flex;
+    justify-content: space-between;
+  }
+`
+const Content = styled.div`
+  width: 100%;
+  @media (min-width: 700px) {
+    width: 50%;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  img {
+    margin-top: 20px;
+  }
+
   button {
     padding: 10px 20px;
     background: #253551;
@@ -104,12 +168,23 @@ const MaskInfo = styled.section`
   }
 `
 
+const ContentImg = styled.img`
+  width: 100%;
+
+  @media (min-width: 700px) {
+    width: 40%;
+  }
+`
+
 const Where = styled.section`
   margin-top: 40px;
-  width: 100%;
   padding: 2rem;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+
+  @media (min-width: 700px) {
+    display: flex;
+    justify-content: space-between;
+  }
   button {
     padding: 10px 20px;
     background: #253551;
@@ -124,9 +199,16 @@ const Where = styled.section`
 `
 
 const ReachOut = styled.section`
-  width: 100%;
   padding: 3rem 2rem;
   text-align: center;
+  margin-top: 50px;
+  h3 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 20px;
+  }
   button {
     padding: 10px 20px;
     background: #253551;
@@ -136,6 +218,13 @@ const ReachOut = styled.section`
     &:hover {
       cursor: pointer;
       background: #25355195;
+    }
+  }
+
+  div {
+    width: 70%;
+    @media (min-width: 700px) {
+      width: 50%;
     }
   }
 `
