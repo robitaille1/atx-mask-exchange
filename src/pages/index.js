@@ -104,12 +104,12 @@ const IndexPage = () => {
 export default IndexPage
 
 const CdcInfo = styled.section`
-  background: lightgray;
+  background: #1b3651;
   padding: 3rem 2rem;
   line-height: 1.5;
   div {
     font-size: 30px;
-    color: black;
+    color: white;
     margin: 20px;
     line-height: 1.5;
   }
