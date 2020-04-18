@@ -1,13 +1,12 @@
 import { Link } from "gatsby"
 import styled from "styled-components"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React from "react"
 import Burger from "../components/Burger/Burger"
 import Menu from "../components/Menu/Menu"
 import AmeLogo from "../images/AME-logo.png"
 
-const Header = () => {
-  const [open, setOpen] = useState(false)
+const Header = ({ open, setOpen }) => {
   return (
     <HeaderItem>
       <Link to="/">
