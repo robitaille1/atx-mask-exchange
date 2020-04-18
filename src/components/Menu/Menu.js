@@ -15,7 +15,11 @@ const Menu = ({ open, setOpen }) => {
       <Link to="/contact" onClick={() => setOpen(!open)}>
         Contact
       </Link>
-      <img style={{ alignSelf: "center" }} src={MaskImg} />
+      <img
+        style={{ alignSelf: "center" }}
+        src={MaskImg}
+        alt="mask logo without text"
+      />
     </StyledMenu>
   )
 }
