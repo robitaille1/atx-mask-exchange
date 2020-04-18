@@ -29,17 +29,14 @@ export default Contact
 
 const Wrapper = styled.section`
   padding: 2rem;
-
   line-height: 2;
 `
-const BannerImg = styled.div`
+const BannerImg = styled.img`
   width: 100%;
   height: 200px;
-  @media(min-width: 700px){
-      height: 300px;
-    }
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-    url(${MaskImg}); */
+  @media (min-width: 700px) {
+    height: 300px;
+  }
 `
 // const ContactForm = styled.form`
 //   margin: 10px auto;
