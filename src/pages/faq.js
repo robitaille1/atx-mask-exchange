@@ -5,12 +5,12 @@ import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import Banner from "../components/Banner/Banner"
-import MaskImg from "../images/masks.jpg"
+import MaskImg from "../images/croppedmask.jpg"
 
 const faq = () => (
   <Layout>
     <SEO title="FAQ" />
-    <BannerImg />
+    <BannerImg src={MaskImg} alt="masks" />
     <Content>
       <h2>Frequently Asked Mask Questions</h2>
       <div>
@@ -145,11 +145,15 @@ const faq = () => (
 
 export default faq
 
-const BannerImg = styled.div`
+const BannerImg = styled.img`
   width: 100%;
   height: 200px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-    url(${MaskImg});
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url(${MaskImg}); */
+
+    @media(min-width: 700px){
+      height: 300px;
+    }
 `
 
 const Content = styled.div`

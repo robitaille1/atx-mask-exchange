@@ -2,12 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import MaskImg from "../images/masks.jpg"
+import MaskImg from "../images/croppedmask.jpg"
 
 const Contact = () => (
   <Layout>
     <SEO title="Contact Us" />
-    <BannerImg />
+    <BannerImg src={MaskImg} alt="masks" />
     <Wrapper>
       <div>
         <h2>Contact Us</h2>
@@ -35,8 +35,11 @@ const Wrapper = styled.section`
 const BannerImg = styled.div`
   width: 100%;
   height: 200px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-    url(${MaskImg});
+  @media(min-width: 700px){
+      height: 300px;
+    }
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url(${MaskImg}); */
 `
 // const ContactForm = styled.form`
 //   margin: 10px auto;

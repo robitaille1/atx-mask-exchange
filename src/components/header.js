@@ -24,10 +24,10 @@ const Header = ({ siteTitle }) => {
       <div>
         <NavLinks>
           <Link to="/faq">FAQ</Link>
-          <Link to="/directory">Request a Mask</Link>
+          <Link to="/directory">Request</Link>
           {/* <Link to="/">Gallery</Link> */}
           {/* <Link to="/">Blog</Link> */}
-          <Link to="/contact">Contact Us</Link>
+          <Link to="/contact">Contact</Link>
           {/* <button>Donate</button> */}
         </NavLinks>
         {/* <div>
@@ -70,10 +70,17 @@ const NavLinks = styled.div`
   /* display: none; */
 
   /* @media (min-width: 700px) { */
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   font-size: 16px;
   align-items: center;
   /* } */
+
+  @media (min-width: 620px) {
+    display: inline;
+    flex-direction: none;
+    margin-top: 10px;
+  }
 
   a {
     margin: 10px;
