@@ -103,7 +103,6 @@ export default IndexPage
 
 const CdcInfo = styled.section`
   background: lightgray;
-  /* width: 100%; */
   padding: 3rem 2rem;
 
   div {
@@ -123,10 +122,8 @@ const CdcInfo = styled.section`
 
 const MaskInfo = styled.section`
   margin-top: 40px;
-  /* width: 100%; */
   padding: 2rem;
   display: block;
-  /* justify-content: space-between; */
 
   @media (min-width: 700px) {
     display: flex;

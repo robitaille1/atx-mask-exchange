@@ -38,32 +38,3 @@ const BannerImg = styled.img`
     height: 300px;
   }
 `
-// const ContactForm = styled.form`
-//   margin: 10px auto;
-//   width: 40%;
-//   display: flex;
-//   flex-direction: column;
-
-//   input {
-//     padding: 10px;
-//   }
-
-//   textarea {
-//     height: 100px;
-//     resize: none;
-//   }
-
-//   button {
-//     padding: 10px 20px;
-//     background: #253551;
-//     color: white;
-//     border: none;
-//     width: 30%;
-//     margin: 15px 0px;
-
-//     &:hover {
-//       cursor: pointer;
-//       background: #25355195;
-//     }
-//   }
-// `

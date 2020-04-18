@@ -80,30 +80,3 @@ const Content = styled.div`
     font-size: 33px;
   }
 `
-
-// const Added = styled.section`
-//   padding: 2rem;
-//   margin: 50px auto;
-//   text-align: center;
-//   line-height: 2;
-
-//   @media (min-width: 700px) {
-//     width: 50%;
-//   }
-
-//   button {
-//     padding: 10px 20px;
-//     background: #253551;
-//     color: white;
-//     border: none;
-
-//     &:hover {
-//       cursor: pointer;
-//       background: #25355195;
-//     }
-//   }
-
-//   h2 {
-//     font-size: 33px;
-//   }
-// `

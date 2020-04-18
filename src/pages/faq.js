@@ -1,10 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-// import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import Banner from "../components/Banner/Banner"
 import MaskImg from "../images/croppedmask.jpg"
 
 const faq = () => (
@@ -94,7 +92,7 @@ const faq = () => (
         </p>
         <p>
           There is also a pleated pattern at{" "}
-          <a href="www.makemaskaustin.org">www.makemaskaustin.org</a>.{" "}
+          <a href="https://www.makemaskaustin.org">www.makemaskaustin.org</a>.{" "}
           <strong>Note:</strong> These masks are meant to fit over medical masks
           to extend their lives.
         </p>
@@ -130,7 +128,9 @@ const faq = () => (
         <p>Awesome! The following organizations are in need of masks:</p>
         <ul>
           <li>
-            <a href="www.makeamaskaustin.org">www.makeamaskaustin.org</a>
+            <a href="https://www.makeamaskaustin.org">
+              www.makeamaskaustin.org
+            </a>
           </li>
           <li>
             Austin State Hospital. Contact Reddit user{" "}
@@ -148,12 +148,10 @@ export default faq
 const BannerImg = styled.img`
   width: 100%;
   height: 200px;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
-    url(${MaskImg}); */
 
-    @media(min-width: 700px){
-      height: 300px;
-    }
+  @media (min-width: 700px) {
+    height: 300px;
+  }
 `
 
 const Content = styled.div`
