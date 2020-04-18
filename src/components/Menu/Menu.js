@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import MaskImg from "../../images/AustinMask.png"
+import MaskLogo from "../../images/AustinMask.png"
 
 const Menu = ({ open, setOpen }) => {
   return (
