@@ -20,7 +20,7 @@ const Menu = ({ open, setOpen }) => {
       </Link>
       <img
         style={{ alignSelf: "center" }}
-        src={MaskImg}
+        src={MaskLogo}
         alt="mask logo without text"
       />
     </StyledMenu>

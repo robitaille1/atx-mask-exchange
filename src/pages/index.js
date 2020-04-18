@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Jumbotron from "../components/Jumbotron/Jumbotron"
 import MaskImg from "../images/masks.jpg"
-import LiamImg from "../images/chillin.jpg"
+import LiamImg from "../images/chillin.JPG"
 
 const IndexPage = () => {
   return (
