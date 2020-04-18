@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer
-          style={{ padding: "2rem", background: "#303030", color: "white" }}
+          style={{ padding: "2rem", background: "#1b3651", color: "white" }}
         >
           <p>Austin Mask Exchange © {new Date().getFullYear()}</p>
           <p>Austin, TX</p>
