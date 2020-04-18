@@ -8,17 +8,16 @@ const jumbotron = () => {
     <Jumbotron>
       <div>
         <h2>Together, we can get everyone in Austin a face mask!</h2>
-        <Button>
-          <Link
-            to="/directory"
-            style={{
-              color: `black`,
-              textDecoration: `none`,
-            }}
-          >
-            Get A Mask!
-          </Link>
-        </Button>
+
+        <Link
+          to="/directory"
+          style={{
+            color: `black`,
+            textDecoration: `none`,
+          }}
+        >
+          <Button>Get A Mask!</Button>
+        </Link>
       </div>
     </Jumbotron>
   )

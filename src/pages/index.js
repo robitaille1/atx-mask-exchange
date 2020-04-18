@@ -37,17 +37,16 @@ const IndexPage = () => {
             may have. If your question is not addressed, do not hesitate to
             contact us.
           </p>
-          <button>
-            <Link
-              to="/faq"
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-              }}
-            >
-              Learn More
-            </Link>
-          </button>
+
+          <Link
+            to="/faq"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            <button>Learn More</button>
+          </Link>
         </Content>
       </MaskInfo>
       <Where>
@@ -58,17 +57,15 @@ const IndexPage = () => {
             Austin, Texas area. Reach out to one of the providers and they will
             get back to you with instructions on how to get masks.
           </p>
-          <button>
-            <Link
-              to="/directory"
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-              }}
-            >
-              Learn More
-            </Link>
-          </button>
+          <Link
+            to="/directory"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            <button>Learn More</button>
+          </Link>
         </Content>
         <ContentImg
           style={{ marginTop: "30px" }}
@@ -86,17 +83,16 @@ const IndexPage = () => {
             any other questions - get in touch! We will get back to you as soon
             as we can.
           </p>
-          <button>
-            <Link
-              to="/contact"
-              style={{
-                color: `white`,
-                textDecoration: `none`,
-              }}
-            >
-              Reach Out
-            </Link>
-          </button>
+
+          <Link
+            to="/contact"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            <button>Reach Out</button>
+          </Link>
         </div>
       </ReachOut>
     </Layout>
