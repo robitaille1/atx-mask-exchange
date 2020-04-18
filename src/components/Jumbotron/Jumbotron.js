@@ -26,14 +26,13 @@ const jumbotron = () => {
 export default jumbotron
 
 const Jumbotron = styled.section`
-  /* width: 100%; */
   height: 80vh;
   display: flex;
   padding: 2rem;
 
   text-align: center;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(${SixthSt});
   background-size: cover;
   background-position: center center;
