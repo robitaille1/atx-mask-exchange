@@ -50,12 +50,14 @@ const IndexPage = () => {
         </Content>
       </MaskInfo>
       <Where>
-        <Content>
+        <Content style={{ marginTop: "20px" }}>
           <h3>Where Can I Get A Face Mask In Austin?</h3>
           <p>
             We are keeping a running list of all the mask creators in the
-            Austin, Texas area. Reach out to one of the providers and they will
-            get back to you with instructions on how to get masks.
+            Austin, Texas area. To request a mask, fill out the form on the
+            directory page. The wonderful volunteers try to prioritize based on
+            need and the date the request was received. One of the mask makers
+            will reach out to you as soon as possible.
           </p>
           <Link
             to="/directory"
@@ -64,7 +66,7 @@ const IndexPage = () => {
               textDecoration: `none`,
             }}
           >
-            <button>Learn More</button>
+            <button>Request a Mask</button>
           </Link>
         </Content>
         <ContentImg
