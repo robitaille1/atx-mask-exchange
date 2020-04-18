@@ -3,12 +3,12 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import MaskImg from "../images/croppedmask.jpg"
+import MasksImg from "../images/croppedmask.jpg"
 
 const faq = () => (
   <Layout>
     <SEO title="FAQ" />
-    <BannerImg src={MaskImg} alt="masks" />
+    <BannerImg src={MasksImg} alt="masks" />
     <Content>
       <h2>Frequently Asked Mask Questions</h2>
       <div>

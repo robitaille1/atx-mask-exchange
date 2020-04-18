@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import LiamImg from "../images/liam.jpg"
+import Liam2Img from "../images/liam.jpg"
 
 const directory = () => (
   <Layout>
@@ -29,7 +29,7 @@ const directory = () => (
           One of the mask makers will reach out to you as soon as possible.{" "}
         </p>
       </Content>
-      <img src={LiamImg} alt="liam making masks" />
+      <img src={Liam2Img} alt="liam making masks" />
     </HeaderDiv>
 
     <iframe
