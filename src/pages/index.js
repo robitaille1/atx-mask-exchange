@@ -104,7 +104,7 @@ export default IndexPage
 const CdcInfo = styled.section`
   background: lightgray;
   padding: 3rem 2rem;
-
+  line-height: 1.5;
   div {
     font-size: 30px;
     color: black;
@@ -124,7 +124,7 @@ const MaskInfo = styled.section`
   margin-top: 40px;
   padding: 2rem;
   display: block;
-
+  line-height: 1.5;
   @media (min-width: 700px) {
     display: flex;
     justify-content: space-between;
@@ -132,6 +132,7 @@ const MaskInfo = styled.section`
 `
 const Content = styled.div`
   width: 100%;
+  line-height: 1.5;
   @media (min-width: 700px) {
     width: 50%;
   }
@@ -173,7 +174,7 @@ const Where = styled.section`
   margin-top: 40px;
   padding: 2rem;
   display: block;
-
+  line-height: 1.5;
   @media (min-width: 700px) {
     display: flex;
     justify-content: space-between;
@@ -195,6 +196,7 @@ const ReachOut = styled.section`
   padding: 3rem 2rem;
   text-align: center;
   margin-top: 50px;
+  line-height: 1.5;
   h3 {
     font-size: 25px;
   }
