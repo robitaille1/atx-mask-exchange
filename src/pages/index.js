@@ -28,11 +28,7 @@ const IndexPage = () => {
       </CdcInfo>
 
       <MaskInfo>
-        <ContentImg
-          style={{ transform: `rotate(90deg)` }}
-          src={MaskImg}
-          alt="masks"
-        />
+        <ContentImg src={MaskImg} alt="masks" />
         <Content>
           <h3>What You Should Know About Face Masks</h3>
           <p>
