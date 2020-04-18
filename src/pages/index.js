@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Jumbotron from "../components/Jumbotron/Jumbotron"
 import MaskImg from "../images/masks.jpg"
-import LiamImg from "../images/liam.jpg"
+import LiamImg from "../images/chillin.jpg"
 
 const IndexPage = () => {
   return (
@@ -28,7 +28,11 @@ const IndexPage = () => {
       </CdcInfo>
 
       <MaskInfo>
-        <ContentImg src={MaskImg} alt="masks" />
+        <ContentImg
+          style={{ transform: `rotate(90deg)` }}
+          src={MaskImg}
+          alt="masks"
+        />
         <Content>
           <h3>What You Should Know About Face Masks</h3>
           <p>
@@ -127,7 +131,7 @@ const MaskInfo = styled.section`
   padding: 2rem;
   display: block;
   line-height: 1.5;
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     display: flex;
     justify-content: space-between;
   }
@@ -135,7 +139,7 @@ const MaskInfo = styled.section`
 const Content = styled.div`
   width: 100%;
   line-height: 1.5;
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     width: 50%;
   }
 
@@ -167,7 +171,7 @@ const Content = styled.div`
 const ContentImg = styled.img`
   width: 100%;
   height: auto;
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     width: 40%;
   }
 `
@@ -177,7 +181,7 @@ const Where = styled.section`
   padding: 2rem;
   display: block;
   line-height: 1.5;
-  @media (min-width: 700px) {
+  @media (min-width: 900px) {
     display: flex;
     justify-content: space-between;
   }
@@ -219,7 +223,7 @@ const ReachOut = styled.section`
   }
 
   div {
-    @media (min-width: 700px) {
+    @media (min-width: 900px) {
       width: 50%;
     }
   }
