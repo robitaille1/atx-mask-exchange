@@ -6,6 +6,9 @@ import MaskImg from "../../images/AustinMask.png"
 const Menu = ({ open, setOpen }) => {
   return (
     <StyledMenu open={open}>
+      <Link to="/" onClick={() => setOpen(!open)}>
+        Home
+      </Link>
       <Link to="/faq" onClick={() => setOpen(!open)}>
         FAQ
       </Link>
