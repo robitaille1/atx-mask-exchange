@@ -10,7 +10,7 @@ const jumbotron = () => {
         <h2>Together, we can get everyone in Austin a face mask!</h2>
 
         <Link
-          to="/directory"
+          to="/mask-directory"
           style={{
             color: `black`,
             textDecoration: `none`,
