@@ -46,20 +46,32 @@ const faq = () => (
           your mask.{" "}
         </p>
         <p>
-          <a href="https://smartairfilters.com/en/blog/best-materials-make-diy-face-mask-virus/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://smartairfilters.com/en/blog/best-materials-make-diy-face-mask-virus/"
+          >
             This blog post
           </a>{" "}
           covers some DIY mask materials you can use.
         </p>
         <p>
-          <a href="https://academic.oup.com/annweh/article/54/7/789/202744">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://academic.oup.com/annweh/article/54/7/789/202744"
+          >
             Here's a useful academic study
           </a>{" "}
           of how various materials filtered small particles.{" "}
         </p>
         <p>
           Reddit user{" "}
-          <a href="https://www.reddit.com/u/bigfootshairyhole">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.reddit.com/u/bigfootshairyhole"
+          >
             u/bigfootshairyhole
           </a>{" "}
           suggested using a piece of a reusable shopping bag.
@@ -79,32 +91,60 @@ const faq = () => (
         <h3>I want to make masks! Where can I get a pattern?</h3>
         <p>
           The “Pocket” pattern{" "}
-          <a href="https://www.craftpassion.com/face-mask-sewing-pattern/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.craftpassion.com/face-mask-sewing-pattern/"
+          >
             here
           </a>{" "}
           provides good cover and a pocket for an additional filter layer.{" "}
         </p>
         <p>
-          <a href="https://covidrangers.com/assembly/stitching/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://covidrangers.com/assembly/stitching/"
+          >
             Covid Rangers
           </a>{" "}
           offers a great step-by-step for this type of mask.
         </p>
         <p>
           There is also a pleated pattern at{" "}
-          <a href="https://www.makemaskaustin.org">www.makemaskaustin.org</a>.{" "}
-          <strong>Note:</strong> These masks are meant to fit over medical masks
-          to extend their lives.
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.makemaskaustin.org"
+          >
+            www.makemaskaustin.org
+          </a>
+          . <strong>Note:</strong> These masks are meant to fit over medical
+          masks to extend their lives.
         </p>
         <p>
-          <a href="https://ragmask.com">https://ragmask.com</a> has a different
-          pattern.{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://ragmask.com"
+          >
+            https://ragmask.com
+          </a>{" "}
+          has a different pattern.{" "}
         </p>
-        <a href="https://www.nytimes.com/article/how-to-make-face-mask-coronavirus.html">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.nytimes.com/article/how-to-make-face-mask-coronavirus.html"
+        >
           Here’s a pattern from the NYT.
         </a>
         <p>
-          <a href="https://www.makemasks2020.org/mask-making-guide">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.makemasks2020.org/mask-making-guide"
+          >
             This page
           </a>{" "}
           offers a pattern with a very useful guide on what materials work best
@@ -128,14 +168,24 @@ const faq = () => (
         <p>Awesome! The following organizations are in need of masks:</p>
         <ul>
           <li>
-            <a href="https://www.makeamaskaustin.org">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.makeamaskaustin.org"
+            >
               www.makeamaskaustin.org
             </a>
           </li>
           <li>
             Austin State Hospital. Contact Reddit user{" "}
-            <a href="https://www.reddit.com/user/spoospoop">u/spoospoop</a> for
-            more information!
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.reddit.com/user/spoospoop"
+            >
+              u/spoospoop
+            </a>{" "}
+            for more information!
           </li>
         </ul>
       </div>
