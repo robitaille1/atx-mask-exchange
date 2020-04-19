@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
+import Img from "gatsby-image"
+// import Liam2Img from "../../images/liam.jpg"
 
-import Liam2Img from "../../images/liam.jpg"
-
-const MaskDirectory = () => (
+const MaskDirectory = props => (
   <>
     <HeaderDiv>
       <Content>
@@ -26,7 +26,12 @@ const MaskDirectory = () => (
           One of the mask makers will reach out to you as soon as possible.{" "}
         </p>
       </Content>
-      <img src={Liam2Img} alt="liam making masks" />
+      <Img
+        imgStyle={{ height: `80%`, marginTop: "20px" }}
+        fluid={props.image.imageLiam.childImageSharp.fluid}
+        alt="masks"
+      />
+      {/* <img src={Liam2Img} alt="liam making masks" /> */}
     </HeaderDiv>
 
     <iframe
@@ -64,7 +69,7 @@ const HeaderDiv = styled.div`
     display: flex;
     justify-content: space-between;
     div {
-      width: 40%;
+      width: 45%;
       margin-right: 30px;
     }
     img {
