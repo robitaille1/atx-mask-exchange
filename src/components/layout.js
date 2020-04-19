@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import { GlobalStyles } from "../global"
-import Header from "../UI/header/header"
+import { GlobalStyles } from "./global"
+import Header from "./UI/header/header"
 
 const Layout = ({ children }) => {
   const [open, setOpen] = useState(false)

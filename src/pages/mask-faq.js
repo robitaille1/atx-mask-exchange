@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/Utility/layout"
+import Layout from "../components/layout"
 import SEO from "../components/Utility/seo"
 import MaskFaq from "../components/Views/MaskFaq"
 
