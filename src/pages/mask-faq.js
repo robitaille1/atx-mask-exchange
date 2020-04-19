@@ -3,11 +3,13 @@ import Layout from "../components/layout"
 import SEO from "../components/Utility/seo"
 import MaskFaq from "../components/Views/MaskFaq"
 
-const maskfaq = () => (
-  <Layout>
-    <SEO title="FAQ" />
-    <MaskFaq />
-  </Layout>
-)
+const Maskfaq = () => {
+  return (
+    <Layout>
+      <SEO title="FAQ" />
+      <MaskFaq />
+    </Layout>
+  )
+}
 
-export default maskfaq
+export default Maskfaq

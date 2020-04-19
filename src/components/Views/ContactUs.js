@@ -1,11 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import GrafImg from "../../images/graf2-crop.jpeg"
+import GrafImg from "../../images/crop2.jpeg"
 
 const ContactUs = () => (
   <>
     <BannerImg src={GrafImg} alt="masks" />
+
     <Wrapper>
       <div>
         <h2>Contact Us</h2>

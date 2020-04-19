@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-
-import MasksImg from "../../images/croppedmask.jpg"
+import MasksImg from "../../images/cropmask.jpg"
 
 const maskfaq = () => (
   <>

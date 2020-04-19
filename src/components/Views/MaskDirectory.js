@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import Img from "gatsby-image"
-// import Liam2Img from "../../images/liam.jpg"
 
 const MaskDirectory = props => (
   <>
@@ -31,7 +30,6 @@ const MaskDirectory = props => (
         fluid={props.image.imageLiam.childImageSharp.fluid}
         alt="masks"
       />
-      {/* <img src={Liam2Img} alt="liam making masks" /> */}
     </HeaderDiv>
 
     <iframe
