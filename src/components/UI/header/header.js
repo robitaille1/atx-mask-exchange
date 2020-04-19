@@ -6,7 +6,7 @@ import Burger from "../Burger/Burger"
 import Menu from "../Menu/Menu"
 import AmeLogo from "../../../images/AME-logo.png"
 
-const Header = ({ open, setOpen }) => {
+const Header = ({ images, open, setOpen }) => {
   return (
     <HeaderItem>
       <Link to="/">

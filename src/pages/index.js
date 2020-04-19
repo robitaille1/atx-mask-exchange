@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Layout from "../components/Utility/layout"
+import Layout from "../components/layout"
 import SEO from "../components/Utility/seo"
 import Home from "../components/Views/Home"
 
@@ -22,9 +22,9 @@ const IndexPage = () => {
           }
         }
       }
-      grafitti: file(relativePath: { eq: "grafitti.jpeg" }) {
+      grafitti: file(relativePath: { eq: "6thst.jpeg" }) {
         childImageSharp {
-          fluid {
+          fluid(quality: 100) {
             ...GatsbyImageSharpFluid
           }
         }
