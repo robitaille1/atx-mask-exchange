@@ -217,13 +217,13 @@ const MakersPage = () => {
     <>
       <MakersDiv>
         <h2>The Makers</h2>
-        <p>
+        <MakersDescription>
           The volunteer mask makers are incredible people. These are the members
           of our community working behind the scenes to fill mask requests for
           those in need. All of these individuals are purchasing materials out
           of their own pockets. Although donation are not expected, they are
           always appreciated.
-        </p>
+        </MakersDescription>
         <MakersDisplay>
           {makers.map(maker => (
             <MakerItem key={maker.name} maker={maker} />
@@ -251,13 +251,12 @@ const MakersDiv = styled.div`
   h2 {
     font-size: 33px;
   }
+`
+const MakersDescription = styled.p`
+  padding: none;
 
-  p {
-    padding: none;
-
-    @media (min-width: 700px) {
-      padding: 1rem 3rem;
-    }
+  @media (min-width: 700px) {
+    padding: 1rem 3rem;
   }
 `
 
