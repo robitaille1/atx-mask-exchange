@@ -214,9 +214,9 @@ const MakersPage = () => {
   ]
 
   return (
-    <div style={{ padding: `2rem`, textAlign: `center` }}>
-      <h2 style={{ fontSize: `33px` }}>The Makers</h2>
-      <p style={{ padding: `1rem 3rem` }}>
+    <MakersDiv>
+      <h2>The Makers</h2>
+      <p>
         The volunteer mask makers are incredible people. These are the members
         of our community working behind the scenes to fill mask requests for
         those in need. All of these individuals are purchasing materials out of
@@ -236,26 +236,43 @@ const MakersPage = () => {
         </p>
         <ContactButton>Contact</ContactButton>
       </div>
-    </div>
+    </MakersDiv>
   )
 }
 
 export default MakersPage
+
+const MakersDiv = styled.div`
+  padding: 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 33px;
+  }
+
+  p {
+    padding: none;
+
+    @media (min-width: 700px) {
+      padding: 1rem 3rem;
+    }
+  }
+`
 
 const MakersDisplay = styled.section`
   display: block;
 
   @media (min-width: 700px) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: 850px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media (min-width: 1000px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 `
 const ContactButton = styled.button`
