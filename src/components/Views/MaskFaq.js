@@ -202,8 +202,7 @@ const BannerImg = styled.img`
 `
 
 const Content = styled.div`
-  width: 90%;
-  margin: 0px auto;
+  padding: 2rem;
   text-align: left;
   line-height: 2;
 
