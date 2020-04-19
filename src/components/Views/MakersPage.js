@@ -214,29 +214,31 @@ const MakersPage = () => {
   ]
 
   return (
-    <MakersDiv>
-      <h2>The Makers</h2>
-      <p>
-        The volunteer mask makers are incredible people. These are the members
-        of our community working behind the scenes to fill mask requests for
-        those in need. All of these individuals are purchasing materials out of
-        their own pockets. Although donation are not expected, they are always
-        appreciated.
-      </p>
-      <MakersDisplay>
-        {makers.map(maker => (
-          <MakerItem key={maker.name} maker={maker} />
-        ))}
-      </MakersDisplay>
-      <div style={{ width: `60%`, margin: `100px auto` }}>
-        <h3 style={{ fontSize: `44px` }}>Become a Maker</h3>
+    <>
+      <MakersDiv>
+        <h2>The Makers</h2>
         <p>
-          If you would like to help us get masks to the people of Austin - get
-          in touch! We would love to hear how you can contribute to the cause!
+          The volunteer mask makers are incredible people. These are the members
+          of our community working behind the scenes to fill mask requests for
+          those in need. All of these individuals are purchasing materials out
+          of their own pockets. Although donation are not expected, they are
+          always appreciated.
         </p>
-        <ContactButton>Contact</ContactButton>
-      </div>
-    </MakersDiv>
+        <MakersDisplay>
+          {makers.map(maker => (
+            <MakerItem key={maker.name} maker={maker} />
+          ))}
+        </MakersDisplay>
+        <div style={{ width: `60%`, margin: `100px auto` }}>
+          <h3 style={{ fontSize: `44px` }}>Become a Maker</h3>
+          <p>
+            If you would like to help us get masks to the people of Austin - get
+            in touch! We would love to hear how you can contribute to the cause!
+          </p>
+          <ContactButton>Contact</ContactButton>
+        </div>
+      </MakersDiv>
+    </>
   )
 }
 
