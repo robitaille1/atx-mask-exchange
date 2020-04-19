@@ -9,6 +9,9 @@ const Menu = ({ open, setOpen }) => {
       <Link to="/" onClick={() => setOpen(!open)}>
         Home
       </Link>
+      <Link to="/makers" onClick={() => setOpen(!open)}>
+        The Makers
+      </Link>
       <Link to="/mask-faq" onClick={() => setOpen(!open)}>
         FAQ
       </Link>

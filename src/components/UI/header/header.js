@@ -14,6 +14,7 @@ const Header = ({ images, open, setOpen }) => {
       </Link>
       <div style={{ display: "flex" }}>
         <NavLinks>
+          <Link to="/makers">The Makers</Link>
           <Link to="/mask-faq">FAQ</Link>
           <Link to="/mask-directory">Request</Link>
           <Link to="/contact-us">Contact</Link>
