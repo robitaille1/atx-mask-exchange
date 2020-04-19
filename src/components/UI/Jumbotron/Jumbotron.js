@@ -12,7 +12,7 @@ const jumbotron = props => {
           backgroundRepeat: `no-repeat`,
           backgroundAttachment: `scroll`,
           height: `90vh`,
-          zIndex: `-100`,
+          zIndex: `2`,
         }}
         fluid={props.image}
       >

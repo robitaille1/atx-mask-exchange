@@ -44,6 +44,7 @@ const StyledMenu = styled.nav`
   width: 100%;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  z-index: 9;
   img {
     width: 70%;
     margin: 10px auto;
