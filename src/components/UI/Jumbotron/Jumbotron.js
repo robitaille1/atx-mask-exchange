@@ -1,47 +1,53 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import SixthSt from "../../../images/6thst.jpeg"
+import BackgroundImage from "gatsby-background-image"
 
-const jumbotron = () => {
+const jumbotron = props => {
   return (
-    <Jumbotron>
-      <div>
-        <h2>Together, we can get everyone in Austin a face mask!</h2>
-
-        <Link
-          to="/mask-directory"
-          style={{
-            color: `black`,
-            textDecoration: `none`,
-          }}
-        >
-          <Button>Get A Mask!</Button>
-        </Link>
-      </div>
-    </Jumbotron>
+    <>
+      <BackgroundImage
+        style={{
+          backgroundSize: `cover`,
+          backgroundRepeat: `no-repeat`,
+          backgroundAttachment: `scroll`,
+          height: `90vh`,
+        }}
+        fluid={props.image}
+      >
+        <Jumbotron>
+          <div>
+            <h2>Together, we can get everyone in Austin a face mask!</h2>
+            <Link
+              to="/mask-directory"
+              style={{
+                color: `black`,
+                textDecoration: `none`,
+              }}
+            >
+              <Button>Get A Mask!</Button>
+            </Link>
+          </div>
+        </Jumbotron>
+      </BackgroundImage>
+    </>
   )
 }
 
 export default jumbotron
 
-const Jumbotron = styled.section`
-  height: 80vh;
+const Jumbotron = styled.div`
+  padding: 2rem 2rem 0rem;
+  display: -webkit-flex;
   display: flex;
-  padding: 2rem;
-
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: -webkit-fill-available;
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(${SixthSt});
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  text-align: center;
 
   div {
     width: 100%;
-    padding: 2rem 0px;
+    padding: 2rem 0px 0rem;
     max-width: 960px;
     text-align: left;
 
