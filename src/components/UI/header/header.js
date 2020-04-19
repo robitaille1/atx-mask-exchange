@@ -45,20 +45,8 @@ const HeaderItem = styled.header`
   @media (min-width: 750px) {
     padding: 0px 2rem;
   }
-
-  h1 {
-    margin: 0;
-    font-size: 32px;
-  }
-  a {
-    &:hover {
-      color: dimgrey;
-    }
-  }
 `
 const NavLinks = styled.div`
-  /* display: flex;
-  flex-direction: column; */
   display: none;
   font-size: 16px;
   align-items: center;
@@ -95,6 +83,6 @@ const NavLinks = styled.div`
 const LogoImg = styled.img`
   height: 50px;
   @media (min-width: 750px) {
-    height: 100px;
+    height: 75px;
   }
 `
