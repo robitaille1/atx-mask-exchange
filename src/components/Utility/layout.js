@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { GlobalStyles } from "../global"
 import Header from "../UI/header/header"
-// import OpenContextProvider, { OpenContext } from "../context/OpenContext"
 
 const Layout = ({ children }) => {
   const [open, setOpen] = useState(false)
