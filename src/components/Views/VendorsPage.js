@@ -111,10 +111,6 @@ const MakersDisplay = styled.section`
   @media (min-width: 850px) {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  @media (min-width: 1000px) {
-    grid-template-columns: repeat(4, 1fr);
-  }
 `
 const ContactButton = styled.button`
   padding: 10px 20px;

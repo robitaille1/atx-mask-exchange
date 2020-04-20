@@ -36,5 +36,6 @@ const MakerCard = styled.div`
 
   a {
     color: black;
+    text-decoration: underline;
   }
 `

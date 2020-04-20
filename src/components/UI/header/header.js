@@ -5,8 +5,15 @@ import React from "react"
 import Burger from "../Burger/Burger"
 import Menu from "../Menu/Menu"
 import AmeLogo from "../../../images/AME-logo.png"
+import {
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from "reactstrap"
+import "../../bootstrap.min.css"
 
-const Header = ({ images, open, setOpen }) => {
+const Header = ({ open, setOpen }) => {
   return (
     <HeaderItem>
       <Link to="/">
@@ -14,10 +21,52 @@ const Header = ({ images, open, setOpen }) => {
       </Link>
       <div style={{ display: "flex" }}>
         <NavLinks>
-          <Link to="/makers">The Makers</Link>
-          <Link to="/mask-faq">FAQ</Link>
-          <Link to="/mask-directory">Request</Link>
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle nav caret>
+              Mask Makers
+            </DropdownToggle>
+            <DropdownMenu right>
+              <DropdownItem>
+                <Link to="/makers">The Makers</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link to="/vendors">Vendors</Link>
+              </DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle nav caret>
+              Resources
+            </DropdownToggle>
+            <DropdownMenu right>
+              <DropdownItem>
+                <Link to="/mask-faq">Mask FAQ</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link to="/">Accessories/Other PPE</Link>
+              </DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
+          <UncontrolledDropdown nav inNavbar>
+            <DropdownToggle nav caret>
+              Ways To Help
+            </DropdownToggle>
+            <DropdownMenu right>
+              <DropdownItem>
+                <Link to="/contact-us">Become a Maker</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link to="/supplies">Supplies We Need</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link to="/">Contribute</Link>
+              </DropdownItem>
+            </DropdownMenu>
+          </UncontrolledDropdown>
           <Link to="/contact-us">Contact</Link>
+          <Link to="/mask-directory">
+            <RequestButton>Request a Mask</RequestButton>
+          </Link>
         </NavLinks>
         <Burger open={open} setOpen={setOpen} />
         <Menu open={open} setOpen={setOpen} />
@@ -46,19 +95,22 @@ const HeaderItem = styled.header`
   @media (min-width: 750px) {
     padding: 0px 2rem;
   }
+
+  li {
+    list-style-type: none;
+  }
 `
 const NavLinks = styled.div`
   display: none;
   font-size: 16px;
   align-items: center;
 
-  @media (min-width: 750px) {
+  @media (min-width: 940px) {
     display: flex;
     flex-direction: none;
   }
 
   a {
-    font-size: 20px;
     margin: 10px;
     color: #1b3651;
     text-decoration: none;
@@ -66,18 +118,18 @@ const NavLinks = styled.div`
       color: #060b10;
     }
   }
+`
 
-  button {
-    margin-left: 5px;
-    padding: 10px 20px;
-    background: #253551;
-    color: white;
-    border: none;
+const RequestButton = styled.button`
+  margin-left: 5px;
+  padding: 10px 20px;
+  background: #253551;
+  color: white;
+  border: none;
 
-    &:hover {
-      cursor: pointer;
-      background: #25355195;
-    }
+  &:hover {
+    cursor: pointer;
+    background: #25355195;
   }
 `
 
