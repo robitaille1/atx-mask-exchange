@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import MasksImg from "../../images/cropmask.jpg"
+import Banner from "../UI/Banner/Banner"
 
-const maskfaq = () => (
+const maskfaq = props => (
   <>
-    <BannerImg src={MasksImg} alt="masks" />
+    <Banner image={props.image} />
     <Content>
       <h2>Frequently Asked Mask Questions</h2>
       <div>
@@ -191,15 +191,6 @@ const maskfaq = () => (
 )
 
 export default maskfaq
-
-const BannerImg = styled.img`
-  width: 100%;
-  height: 200px;
-
-  @media (min-width: 700px) {
-    height: 300px;
-  }
-`
 
 const Content = styled.div`
   padding: 2rem;

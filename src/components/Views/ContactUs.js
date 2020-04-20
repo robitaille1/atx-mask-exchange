@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import GrafImg from "../../images/crop2.jpeg"
+import Banner from "../UI/Banner/Banner"
 
-const ContactUs = () => (
+const ContactUs = props => (
   <>
-    <BannerImg src={GrafImg} alt="masks" />
-
+    <Banner image={props.image} />
     <Wrapper>
       <div>
         <h2>Contact Us</h2>
@@ -37,12 +36,5 @@ const Wrapper = styled.section`
   @media (min-width: 700px) {
     width: 70%;
     margin: 10px auto;
-  }
-`
-const BannerImg = styled.img`
-  width: 100%;
-  height: 200px;
-  @media (min-width: 700px) {
-    height: 300px;
   }
 `
