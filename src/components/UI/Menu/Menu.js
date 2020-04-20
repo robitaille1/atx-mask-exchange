@@ -12,7 +12,6 @@ import {
 const Menu = ({ open, setOpen }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const toggle = () => setDropdownOpen(prevState => !prevState)
-
   const [dropdownOpen2, setDropdownOpen2] = useState(false)
   const toggle2 = () => setDropdownOpen2(prevState => !prevState)
   const [dropdownOpen3, setDropdownOpen3] = useState(false)
@@ -78,48 +77,6 @@ const Menu = ({ open, setOpen }) => {
           Request a Mask
         </p>
       </Link>
-      {/* <Link to="/" onClick={() => setOpen(!open)}>
-        Home
-      </Link>
-      <Link to="/makers" onClick={() => setOpen(!open)}>
-        The Makers
-      </Link>
-      <p>Mask Makers</p>
-      <ul>
-        <Link to="/makers" onClick={() => setOpen(!open)}>
-          <li>The Makers</li>
-        </Link>
-        <Link to="/vendors" onClick={() => setOpen(!open)}>
-          <li>Vendors</li>
-        </Link>
-      </ul>
-      <p>Resources</p>
-      <ul>
-        <Link to="/mask-faq" onClick={() => setOpen(!open)}>
-          <li>Mask FAQ</li>
-        </Link>
-        <Link to="/" onClick={() => setOpen(!open)}>
-          <li>Accessories/Other PPE</li>
-        </Link>
-      </ul>
-      <p>Ways to help</p>
-      <ul>
-        <Link to="/mask-faq" onClick={() => setOpen(!open)}>
-          <li>Become a Maker</li>
-        </Link>
-        <Link to="/supplies" onClick={() => setOpen(!open)}>
-          <li>Supplies We Need</li>
-        </Link>
-        <Link to="/" onClick={() => setOpen(!open)}>
-          <li>Contribute</li>
-        </Link>
-      </ul>
-      <Link to="/mask-directory" onClick={() => setOpen(!open)}>
-        Request a Mask
-      </Link>
-      <Link to="/contact-us" onClick={() => setOpen(!open)}>
-        Contact
-      </Link> */}
       <img
         style={{ alignSelf: "center" }}
         src={MaskLogo}
@@ -158,7 +115,6 @@ const StyledMenu = styled.nav`
   button {
     color: #1b3651;
     font-weight: bold;
-    /* letter-spacing: 0.5rem; */
     font-size: 20px;
     background: white;
     border: none;
@@ -176,7 +132,6 @@ const StyledMenu = styled.nav`
     font-size: 1rem;
     padding: 1rem 0;
     font-weight: bold;
-    /* letter-spacing: 0.5rem; */
     color: #1b3651;
     text-decoration: none;
     transition: color 0.3s linear;

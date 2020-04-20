@@ -4,7 +4,9 @@ import styled from "styled-components"
 const MakerItem = props => (
   <MakerCard>
     <h3>{props.maker.name}</h3>
-    {props.maker.contact.email ? <h4>{props.maker.contact.email}</h4> : null}
+    {props.maker.contact.email ? (
+      <h4 style={{ fontSize: `16px` }}>{props.maker.contact.email}</h4>
+    ) : null}
     {props.maker.contact.reddit ? (
       <h4>
         Reddit:{" "}
@@ -18,6 +20,18 @@ const MakerItem = props => (
       <h4>Twitter: @{props.maker.contact.twitter}</h4>
     ) : null}
     <p>{props.maker.description}</p>
+    {/* {props.maker.links ? (
+      <>
+        <p>
+          To Donate:
+          {props.maker.links.toDonate}
+        </p>
+        <p>
+          To Purchase:
+          {props.maker.links.toPurchase}
+        </p>
+      </>
+    ) : null} */}
   </MakerCard>
 )
 
@@ -37,5 +51,6 @@ const MakerCard = styled.div`
   a {
     color: black;
     text-decoration: underline;
+    word-wrap: break-word;
   }
 `
