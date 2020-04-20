@@ -4,6 +4,7 @@ import styled from "styled-components"
 const MakerItem = props => (
   <MakerCard>
     <h3>{props.maker.name}</h3>
+    {props.maker.contact.email ? <h4>{props.maker.contact.email}</h4> : null}
     {props.maker.contact.reddit ? (
       <h4>
         Reddit:{" "}
