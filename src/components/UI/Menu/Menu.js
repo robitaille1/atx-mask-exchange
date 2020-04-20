@@ -69,7 +69,7 @@ const Menu = ({ open, setOpen }) => {
           style={{
             color: `white`,
             background: `#1b3651`,
-            width: `30%`,
+            width: `50%`,
             padding: `1rem .5rem`,
             margin: "0px auto",
           }}
