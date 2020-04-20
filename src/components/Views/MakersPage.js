@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import MakerItem from "../MakerItem/MakerItem"
 
@@ -155,7 +156,7 @@ const MakersPage = () => {
     {
       name: "Magellan School Makers",
       description:
-        "The Magellan International School, in collaboration with http://www.colabcommunitymakers.org/, are pooling resources to provide PPE for those in need in the Austin community. From handmade cloth masks to 3D printed face shields and laser cut ear savers, their goal is to support those in the front line of the Covid-19 response.",
+        "The Magellan International School, in collaboration with Colab Community Makers, are pooling resources to provide PPE for those in need in the Austin community. From handmade cloth masks to 3D printed face shields and laser cut ear savers, their goal is to support those in the front line of the Covid-19 response.",
       contact: {
         twitter: null,
         reddit: null,
@@ -235,7 +236,9 @@ const MakersPage = () => {
             If you would like to help us get masks to the people of Austin - get
             in touch! We would love to hear how you can contribute to the cause!
           </p>
-          <ContactButton>Contact</ContactButton>
+          <Link to="/contact-us">
+            <ContactButton>Contact</ContactButton>
+          </Link>
         </div>
       </MakersDiv>
     </>
@@ -254,7 +257,7 @@ const MakersDiv = styled.div`
 `
 const MakersDescription = styled.p`
   padding: none;
-
+  line-height: 2;
   @media (min-width: 700px) {
     padding: 1rem 3rem;
   }
