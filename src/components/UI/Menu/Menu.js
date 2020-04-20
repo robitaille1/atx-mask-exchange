@@ -1,17 +1,89 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-// import MaskLogo from "../../../images/AustinMask.png"
+import MaskLogo from "../../../images/AustinMask.png"
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from "reactstrap"
 
 const Menu = ({ open, setOpen }) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const toggle = () => setDropdownOpen(prevState => !prevState)
+
+  const [dropdownOpen2, setDropdownOpen2] = useState(false)
+  const toggle2 = () => setDropdownOpen2(prevState => !prevState)
+  const [dropdownOpen3, setDropdownOpen3] = useState(false)
+  const toggle3 = () => setDropdownOpen3(prevState => !prevState)
+
   return (
     <StyledMenu open={open}>
-      <Link to="/" onClick={() => setOpen(!open)}>
+      <Link to="/">
+        <p>Home</p>
+      </Link>
+      <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+        <DropdownToggle caret>Mask Makers</DropdownToggle>
+        <DropdownMenu>
+          <Link to="/makers" onClick={() => setOpen(!open)}>
+            <DropdownItem>The Makers</DropdownItem>
+          </Link>
+          <Link to="/vendors" onClick={() => setOpen(!open)}>
+            <DropdownItem>Vendors</DropdownItem>
+          </Link>
+          <Link to="/" onClick={() => setOpen(!open)}>
+            <DropdownItem>Bulk Needs</DropdownItem>
+          </Link>
+        </DropdownMenu>
+      </Dropdown>
+      <Dropdown isOpen={dropdownOpen2} toggle={toggle2}>
+        <DropdownToggle caret>Resources</DropdownToggle>
+        <DropdownMenu>
+          <Link to="/mask-faq" onClick={() => setOpen(!open)}>
+            <DropdownItem>Mask FAQ</DropdownItem>
+          </Link>
+          <Link to="/" onClick={() => setOpen(!open)}>
+            <DropdownItem>Accessories/Other PPE</DropdownItem>
+          </Link>
+        </DropdownMenu>
+      </Dropdown>
+      <Dropdown isOpen={dropdownOpen3} toggle={toggle3}>
+        <DropdownToggle caret>Ways to Help</DropdownToggle>
+        <DropdownMenu>
+          <Link to="/contact-us" onClick={() => setOpen(!open)}>
+            <DropdownItem>Become a Maker</DropdownItem>
+          </Link>
+          <Link to="/supplies" onClick={() => setOpen(!open)}>
+            <DropdownItem>Supplies We Need</DropdownItem>
+          </Link>
+          <Link to="/contact-us" onClick={() => setOpen(!open)}>
+            <DropdownItem>Contribute</DropdownItem>
+          </Link>
+        </DropdownMenu>
+      </Dropdown>
+      <Link to="/contact-us" onClick={() => setOpen(!open)}>
+        <p>Contact</p>
+      </Link>
+      <Link to="/mask-directory" onClick={() => setOpen(!open)}>
+        <p
+          style={{
+            color: `white`,
+            background: `#1b3651`,
+            width: `50%`,
+            padding: `1rem .5rem`,
+            margin: "0px auto",
+          }}
+        >
+          Request a Mask
+        </p>
+      </Link>
+      {/* <Link to="/" onClick={() => setOpen(!open)}>
         Home
       </Link>
-      {/* <Link to="/makers" onClick={() => setOpen(!open)}>
+      <Link to="/makers" onClick={() => setOpen(!open)}>
         The Makers
-      </Link> */}
+      </Link>
       <p>Mask Makers</p>
       <ul>
         <Link to="/makers" onClick={() => setOpen(!open)}>
@@ -47,12 +119,12 @@ const Menu = ({ open, setOpen }) => {
       </Link>
       <Link to="/contact-us" onClick={() => setOpen(!open)}>
         Contact
-      </Link>
-      {/* <img
+      </Link> */}
+      <img
         style={{ alignSelf: "center" }}
         src={MaskLogo}
         alt="mask logo without text"
-      /> */}
+      />
     </StyledMenu>
   )
 }
@@ -64,9 +136,8 @@ const StyledMenu = styled.nav`
   justify-content: center;
   background: white;
   height: 100vh;
-  text-align: left;
+  text-align: center;
   position: absolute;
-  padding-left: 40px;
   top: 0;
   right: 0;
   width: 100%;
@@ -83,11 +154,21 @@ const StyledMenu = styled.nav`
   li {
     padding: 5px;
   }
+
+  button {
+    color: #1b3651;
+    font-weight: bold;
+    /* letter-spacing: 0.5rem; */
+    font-size: 20px;
+    background: white;
+    border: none;
+    padding: 16px 0px;
+  }
   img {
     width: 70%;
     margin: 10px auto;
     @media (min-width: 600px) {
-      width: 30%;
+      width: 50%;
       margin: 0px;
     }
   }
@@ -95,7 +176,7 @@ const StyledMenu = styled.nav`
     font-size: 1rem;
     padding: 1rem 0;
     font-weight: bold;
-    letter-spacing: 0.5rem;
+    /* letter-spacing: 0.5rem; */
     color: #1b3651;
     text-decoration: none;
     transition: color 0.3s linear;
