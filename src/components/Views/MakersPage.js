@@ -230,7 +230,7 @@ const MakersPage = () => {
             <MakerItem key={maker.name} maker={maker} />
           ))}
         </MakersDisplay>
-        <div style={{ width: `60%`, margin: `100px auto` }}>
+        <Become>
           <h3 style={{ fontSize: `44px` }}>Become a Maker</h3>
           <p style={{ lineHeight: `2`, fontSize: `20px` }}>
             If you would like to help us get masks to the people of Austin - get
@@ -239,7 +239,7 @@ const MakersPage = () => {
           <Link to="/contact-us">
             <ContactButton>Contact</ContactButton>
           </Link>
-        </div>
+        </Become>
       </MakersDiv>
     </>
   )
@@ -289,5 +289,12 @@ const ContactButton = styled.button`
   &:hover {
     cursor: pointer;
     background: #25355195;
+  }
+`
+const Become = styled.div`
+  width: 100%;
+  margin: 100px auto;
+  @media (min-width: 700px) {
+    width: 60%;
   }
 `
