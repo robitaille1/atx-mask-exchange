@@ -232,7 +232,7 @@ const MakersPage = () => {
         </MakersDisplay>
         <div style={{ width: `60%`, margin: `100px auto` }}>
           <h3 style={{ fontSize: `44px` }}>Become a Maker</h3>
-          <p>
+          <p style={{ lineHeight: `2`, fontSize: `20px` }}>
             If you would like to help us get masks to the people of Austin - get
             in touch! We would love to hear how you can contribute to the cause!
           </p>
@@ -258,6 +258,7 @@ const MakersDiv = styled.div`
 const MakersDescription = styled.p`
   padding: none;
   line-height: 2;
+  font-size: 20px;
   @media (min-width: 700px) {
     padding: 1rem 3rem;
   }
