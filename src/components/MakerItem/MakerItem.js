@@ -5,7 +5,12 @@ const MakerItem = props => (
   <MakerCard>
     <h3>{props.maker.name}</h3>
     {props.maker.contact.reddit ? (
-      <h4>Reddit: {props.maker.contact.reddit}</h4>
+      <h4>
+        Reddit:{" "}
+        <a href={"https://www.reddit.com/user" + props.maker.contact.reddit}>
+          {props.maker.contact.reddit}
+        </a>
+      </h4>
     ) : null}
 
     {props.maker.contact.twitter ? (
@@ -26,5 +31,9 @@ const MakerCard = styled.div`
 
   @media (min-width: 700px) {
     margin: 10px;
+  }
+
+  a {
+    color: black;
   }
 `
