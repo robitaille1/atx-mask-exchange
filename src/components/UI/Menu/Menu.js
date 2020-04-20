@@ -70,7 +70,7 @@ const Menu = ({ open, setOpen }) => {
           style={{
             color: `white`,
             background: `#1b3651`,
-            width: `50%`,
+            width: `30%`,
             padding: `1rem .5rem`,
             margin: "0px auto",
           }}
@@ -165,10 +165,10 @@ const StyledMenu = styled.nav`
     padding: 16px 0px;
   }
   img {
-    width: 70%;
+    width: 50%;
     margin: 10px auto;
     @media (min-width: 600px) {
-      width: 50%;
+      width: 30%;
       margin: 0px;
     }
   }
