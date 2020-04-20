@@ -205,7 +205,7 @@ const Content = styled.div`
   padding: 2rem;
   text-align: left;
   line-height: 2;
-
+  margin: 0px auto;
   div {
     margin-top: 75px;
   }
