@@ -19,7 +19,7 @@ const Menu = ({ open, setOpen }) => {
 
   return (
     <StyledMenu open={open}>
-      <Link to="/">
+      <Link to="/" onClick={() => setOpen(!open)}>
         <p>Home</p>
       </Link>
       <Dropdown isOpen={dropdownOpen} toggle={toggle}>
