@@ -27,7 +27,7 @@ const StyledBurger = styled.a`
   padding: 0;
   z-index: 10;
   margin: auto 10px;
-  @media (min-width: 940px) {
+  @media (min-width: 1000px) {
     display: none;
   }
   &:focus {

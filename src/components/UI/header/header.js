@@ -109,7 +109,7 @@ const NavLinks = styled.div`
   font-size: 16px;
   align-items: center;
 
-  @media (min-width: 940px) {
+  @media (min-width: 1000px) {
     display: flex;
     flex-direction: none;
   }

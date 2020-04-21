@@ -105,6 +105,10 @@ const StyledMenu = styled.nav`
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   z-index: 9;
+
+  @media (min-width: 600px) {
+    text-align: center;
+  }
   p {
     font-size: 20px;
     margin-bottom: 2px;
@@ -141,6 +145,7 @@ const StyledMenu = styled.nav`
     transition: color 0.3s linear;
     @media (min-width: 600px) {
       font-size: 1.5rem;
+      padding: 20px 2rem;
     }
     @media (max-width: 336px) {
       font-size: 0.7rem;
