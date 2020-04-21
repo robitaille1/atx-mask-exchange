@@ -5,7 +5,7 @@ import Banner from "../UI/Banner/Banner"
 
 const maskfaq = props => (
   <>
-    <Banner image={props.image} />
+    <Banner image={props.image} alt="masks" />
     <Content>
       <h2>Frequently Asked Mask Questions</h2>
       <div>

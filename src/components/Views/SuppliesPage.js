@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 
 const SuppliesPage = props => (
   <>
-    <Banner image={props.image} />
+    <Banner image={props.image} alt="masks" />
     <div style={{ padding: `2rem` }}>
       <p style={{ fontSize: `22px` }}>
         Mask Makers go through supplies quickly. If you have supplies on hand
@@ -15,7 +15,7 @@ const SuppliesPage = props => (
     <SuppliesDisplay>
       {props.supplies.map(supply => (
         <SupplyCard key={supply.name}>
-          <Img fluid={supply.image} />
+          <Img fluid={supply.image} alt={supply.name} />
           <div style={{ padding: `10px` }}>
             <h3>{supply.name}</h3>
             <p>{supply.description}</p>

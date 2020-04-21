@@ -8,7 +8,10 @@ import Jumbotron from "../UI/Jumbotron/Jumbotron"
 const Home = props => {
   return (
     <>
-      <Jumbotron image={props.images.grafitti.childImageSharp.fluid} />
+      <Jumbotron
+        image={props.images.grafitti.childImageSharp.fluid}
+        alt="grafitti on 6th street"
+      />
       <CdcInfo>
         <div style={{ margin: "0px" }}>
           <h2>The CDC recommends that everyone wear cloth masks.</h2>

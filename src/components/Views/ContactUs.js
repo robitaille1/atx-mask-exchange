@@ -6,7 +6,7 @@ import ContactForm from "../ContactForm/ContactForm"
 
 const ContactUs = props => (
   <>
-    <Banner image={props.image} />
+    <Banner image={props.image} alt="masks" />
     <Wrapper>
       <div>
         <h2>Contact Us</h2>

@@ -14,6 +14,7 @@ const contributePage = props => (
         zIndex: `2`,
       }}
       fluid={props.image}
+      alt="masks"
     >
       <Jumbotron>
         <div style={{ padding: `0px` }}>

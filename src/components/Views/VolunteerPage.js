@@ -5,7 +5,7 @@ import Banner from "../UI/Banner/Banner"
 
 const volunteerPage = props => (
   <>
-    <Banner image={props.image} />
+    <Banner image={props.image} alt="masks" />
     <h2 style={{ marginTop: `30px`, textAlign: `center` }}>
       Types of Volunteers We Need
     </h2>

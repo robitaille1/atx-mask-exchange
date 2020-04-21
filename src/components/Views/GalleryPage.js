@@ -27,20 +27,32 @@ const GalleryPage = props => {
           </p>
         </div>
 
-        <Img fluid={props.images.liam2.childImageSharp.fluid} />
+        <Img
+          fluid={props.images.liam2.childImageSharp.fluid}
+          alt="AME creator Liam"
+        />
         <p style={{ marginTop: `1rem` }}>
           Keep Austin Weird ... in face masks!
         </p>
       </GalleryDesc>
       <ImageDisplay>
         <ImageCard>
-          <Img fluid={props.images.pic1.childImageSharp.fluid} />
+          <Img
+            fluid={props.images.pic1.childImageSharp.fluid}
+            alt="AME creator Liam again"
+          />
         </ImageCard>
         <ImageCard>
-          <Img fluid={props.images.pic2.childImageSharp.fluid} />
+          <Img
+            fluid={props.images.pic2.childImageSharp.fluid}
+            alt="two people in a mask"
+          />
         </ImageCard>
         <ImageCard>
-          <Img fluid={props.images.pic3.childImageSharp.fluid} />
+          <Img
+            fluid={props.images.pic3.childImageSharp.fluid}
+            alt="a man in a mask"
+          />
         </ImageCard>
       </ImageDisplay>
     </>

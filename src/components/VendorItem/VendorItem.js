@@ -13,6 +13,8 @@ const VendorItem = props => (
       <h4>
         Reddit:{" "}
         <a
+          rel="noopener noreferrer"
+          target="_blank"
           style={{ wordWrap: `break-word` }}
           href={"https://www.reddit.com/user" + props.maker.contact.reddit}
         >
