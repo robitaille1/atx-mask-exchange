@@ -20,9 +20,6 @@ const ContactUs = props => (
           </Link>{" "}
           and a mask maker will get in contact with you.
         </p>
-        <a style={{ color: "black" }} href="mailto:liam@austinmaskexchange.org">
-          liam@austinmaskexchange.org
-        </a>
         <ContactForm />
       </div>
     </Wrapper>
