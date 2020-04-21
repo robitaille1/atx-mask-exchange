@@ -24,11 +24,13 @@ const GalleryPage = props => {
             <a href="mailto:liam@austinmaskexchange.org">
               Liam@austinmaskexchange.org
             </a>
-            .
           </p>
         </div>
 
         <Img fluid={props.images.liam2.childImageSharp.fluid} />
+        <p style={{ marginTop: `1rem` }}>
+          Keep Austin Weird ... in face masks!
+        </p>
       </GalleryDesc>
       <ImageDisplay>
         <ImageCard>
@@ -48,18 +50,18 @@ const GalleryPage = props => {
 export default GalleryPage
 
 const GalleryDesc = styled.section`
-  padding: 2rem;
+  padding: 2rem 2rem 0rem;
   display: block;
-  /* justify-content: space-between; */
+  text-align: left;
 
   @media (min-width: 855px) {
     display: flex;
   }
 
   div {
-    text-align: center;
+    text-align: left;
     margin: 0px auto;
-    width: 90%;
+    width: 100%;
     @media (min-width: 855px) {
       align-content: center;
       text-align: left;
@@ -84,7 +86,7 @@ const ImageDisplay = styled.section`
   }
 `
 const ImageCard = styled.div`
-  padding: 20px;
+  padding: 20px 0px;
 
   img {
     width: 100%;
