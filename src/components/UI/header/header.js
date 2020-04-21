@@ -53,7 +53,7 @@ const Header = ({ open, setOpen }) => {
             </DropdownToggle>
             <DropdownMenu right>
               <DropdownItem>
-                <Link to="/contact-us">Become a Maker</Link>
+                <Link to="/volunteer">Volunteer</Link>
               </DropdownItem>
               <DropdownItem>
                 <Link to="/supplies">Supplies We Need</Link>

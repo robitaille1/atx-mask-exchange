@@ -50,8 +50,8 @@ const Menu = ({ open, setOpen }) => {
       <Dropdown isOpen={dropdownOpen3} toggle={toggle3}>
         <DropdownToggle caret>Ways to Help</DropdownToggle>
         <DropdownMenu>
-          <Link to="/contact-us" onClick={() => setOpen(!open)}>
-            <DropdownItem>Become a Maker</DropdownItem>
+          <Link to="/volunteer" onClick={() => setOpen(!open)}>
+            <DropdownItem>Volunteer</DropdownItem>
           </Link>
           <Link to="/supplies" onClick={() => setOpen(!open)}>
             <DropdownItem>Supplies We Need</DropdownItem>
