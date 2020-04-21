@@ -39,9 +39,9 @@ const Menu = ({ open, setOpen }) => {
           <Link to="/mask-faq" onClick={() => setOpen(!open)}>
             <DropdownItem>Mask FAQ</DropdownItem>
           </Link>
-          <Link to="/" onClick={() => setOpen(!open)}>
+          {/* <Link to="/" onClick={() => setOpen(!open)}>
             <DropdownItem>Accessories/Other PPE</DropdownItem>
-          </Link>
+          </Link> */}
           <Link to="/vendors" onClick={() => setOpen(!open)}>
             <DropdownItem>Vendors</DropdownItem>
           </Link>
