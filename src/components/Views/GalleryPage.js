@@ -6,7 +6,7 @@ const GalleryPage = props => {
   return (
     <>
       <GalleryDesc>
-        <div>
+        <Content>
           <h2>Austinites in Masks</h2>
           <p>
             For now, we all have to wear masks. But we don’t have to be gloomy
@@ -25,15 +25,15 @@ const GalleryPage = props => {
               Liam@austinmaskexchange.org
             </a>
           </p>
-        </div>
+          <p style={{ marginTop: `1rem` }}>
+            Keep Austin Weird ... in face masks!
+          </p>
+        </Content>
 
         <Img
           fluid={props.images.liam2.childImageSharp.fluid}
           alt="AME creator Liam"
         />
-        <p style={{ marginTop: `1rem` }}>
-          Keep Austin Weird ... in face masks!
-        </p>
       </GalleryDesc>
       <ImageDisplay>
         <ImageCard>
@@ -89,6 +89,13 @@ const GalleryDesc = styled.section`
   }
 `
 
+const Content = styled.div`
+  padding: 1rem 0rem;
+  @media (min-width: 855px) {
+    padding: 3rem 0rem;
+  }
+`
+
 const ImageDisplay = styled.section`
   padding: 2rem;
   display: grid;
@@ -99,7 +106,9 @@ const ImageDisplay = styled.section`
 `
 const ImageCard = styled.div`
   padding: 20px 0px;
-
+  @media (min-width: 855px) {
+    padding: 1rem;
+  }
   img {
     width: 100%;
   }
