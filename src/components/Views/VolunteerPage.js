@@ -62,9 +62,12 @@ const StyledH3 = styled.h3`
 `
 
 const FormDiv = styled.div`
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
   @media (min-width: 700px) {
+    width: 70%;
+  }
+  @media (min-width: 1100px) {
     width: 50%;
   }
 `
