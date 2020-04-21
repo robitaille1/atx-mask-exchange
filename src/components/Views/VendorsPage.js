@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import MakerItem from "../MakerItem/MakerItem"
+import VendorItem from "../VendorItem/VendorItem"
 
 const VendorsPage = () => {
   const vendors = [
@@ -137,7 +137,7 @@ const VendorsPage = () => {
         <h2>Local Vendors</h2>
         <MakersDisplay>
           {vendors.map(vendor => (
-            <MakerItem key={vendor.name} maker={vendor} />
+            <VendorItem key={vendor.name} maker={vendor} />
           ))}
         </MakersDisplay>
         <Become>

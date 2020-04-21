@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-const MakerItem = props => (
+const VendorItem = props => (
   <MakerCard>
     <h3>{props.maker.name}</h3>
     {props.maker.contact.email ? (
@@ -27,10 +27,39 @@ const MakerItem = props => (
     {props.maker.description ? (
       <p style={{ wordWrap: `break-word` }}>{props.maker.description}</p>
     ) : null}
+
+    {props.maker.links.toDonate ? (
+      <p>
+        To Donate:
+        <span style={{ wordWrap: `break-word`, textDecoration: "underline" }}>
+          {props.maker.links.toDonate}
+        </span>
+      </p>
+    ) : null}
+    {props.maker.links.toPurchase ? (
+      <p>
+        To Purchase:{" "}
+        <span style={{ wordWrap: `break-word`, textDecoration: "underline" }}>
+          {props.maker.links.toPurchase}
+        </span>
+      </p>
+    ) : null}
+    {props.maker.description2.consumer ? (
+      <>
+        <p>
+          <strong>Consumer Masks: </strong>
+          {props.maker.description2.consumer}
+        </p>
+        <p>
+          <strong>Company Masks: </strong>
+          {props.maker.description2.company}
+        </p>
+      </>
+    ) : null}
   </MakerCard>
 )
 
-export default MakerItem
+export default VendorItem
 
 const MakerCard = styled.div`
   text-align: left;
