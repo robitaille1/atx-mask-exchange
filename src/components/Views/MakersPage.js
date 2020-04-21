@@ -231,12 +231,12 @@ const MakersPage = () => {
           ))}
         </MakersDisplay>
         <Become>
-          <h3 style={{ fontSize: `44px` }}>Become a Maker</h3>
+          <h3 style={{ fontSize: `44px` }}>Become a Volunteer</h3>
           <p style={{ lineHeight: `2`, fontSize: `20px` }}>
             If you would like to help us get masks to the people of Austin - get
             in touch! We would love to hear how you can contribute to the cause!
           </p>
-          <Link to="/contact-us">
+          <Link to="/volunteer">
             <ContactButton>Contact</ContactButton>
           </Link>
         </Become>
