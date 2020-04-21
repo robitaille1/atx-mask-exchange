@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-// import MaskLogo from "../../../images/AustinMask.png"
+import MaskLogo from "../../../images/AustinMask.png"
 import {
   Dropdown,
   DropdownToggle,
@@ -72,16 +72,17 @@ const Menu = ({ open, setOpen }) => {
             width: `50%`,
             padding: `1rem .5rem`,
             margin: "0px auto",
+            textAlign: `center`,
           }}
         >
           Request a Mask
         </p>
       </Link>
-      {/* <img
+      <img
         style={{ alignSelf: "center" }}
         src={MaskLogo}
         alt="mask logo without text"
-      /> */}
+      />
     </StyledMenu>
   )
 }
@@ -93,7 +94,7 @@ const StyledMenu = styled.nav`
   justify-content: center;
   background: white;
   height: 100vh;
-  text-align: center;
+  text-align: left;
   position: absolute;
   top: 0;
   right: 0;
@@ -118,11 +119,11 @@ const StyledMenu = styled.nav`
     font-size: 20px;
     background: white;
     border: none;
-    padding: 16px 0px;
+    padding: 10px 2rem;
   }
   img {
-    width: 50%;
-    margin: 10px auto;
+    width: 30%;
+    margin: 0px auto;
     @media (min-width: 600px) {
       width: 30%;
       margin: 0px;
@@ -130,7 +131,7 @@ const StyledMenu = styled.nav`
   }
   a {
     font-size: 1rem;
-    padding: 1rem 0;
+    padding: 10px 2rem;
     font-weight: bold;
     color: #1b3651;
     text-decoration: none;
