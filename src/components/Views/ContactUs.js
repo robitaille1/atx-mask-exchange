@@ -31,10 +31,15 @@ export default ContactUs
 const Wrapper = styled.section`
   padding: 2rem;
   line-height: 2;
+  width: 100%;
 
   @media (min-width: 700px) {
     width: 70%;
     margin: 10px auto;
+  }
+
+  @media (min-width: 1100px) {
+    width: 50%;
   }
   a {
     text-decoration: underline;
