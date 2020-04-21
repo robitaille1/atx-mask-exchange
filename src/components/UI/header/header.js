@@ -23,14 +23,14 @@ const Header = ({ open, setOpen }) => {
         <NavLinks>
           <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav caret>
-              Mask Makers
+              Who We Are
             </DropdownToggle>
             <DropdownMenu right>
               <DropdownItem>
-                <Link to="/makers">The Makers</Link>
+                <Link to="/about">About Us</Link>
               </DropdownItem>
               <DropdownItem>
-                <Link to="/vendors">Vendors</Link>
+                <Link to="/makers">Our Volunteers</Link>
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
@@ -44,6 +44,9 @@ const Header = ({ open, setOpen }) => {
               </DropdownItem>
               <DropdownItem>
                 <Link to="/">Accessories/Other PPE</Link>
+              </DropdownItem>
+              <DropdownItem>
+                <Link to="/vendors">Vendors</Link>
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>

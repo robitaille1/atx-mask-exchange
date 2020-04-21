@@ -217,7 +217,7 @@ const MakersPage = () => {
   return (
     <>
       <MakersDiv>
-        <h2>The Makers</h2>
+        <h2>Our Volunteers</h2>
         <MakersDescription>
           The volunteer mask makers are incredible people. These are the members
           of our community working behind the scenes to fill mask requests for
