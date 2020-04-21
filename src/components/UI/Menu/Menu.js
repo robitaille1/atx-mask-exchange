@@ -23,13 +23,13 @@ const Menu = ({ open, setOpen }) => {
         <p>Home</p>
       </Link>
       <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-        <DropdownToggle caret>Mask Makers</DropdownToggle>
+        <DropdownToggle caret>Who We Are</DropdownToggle>
         <DropdownMenu>
-          <Link to="/makers" onClick={() => setOpen(!open)}>
-            <DropdownItem>The Makers</DropdownItem>
+          <Link to="/about" onClick={() => setOpen(!open)}>
+            <DropdownItem>About Us</DropdownItem>
           </Link>
-          <Link to="/vendors" onClick={() => setOpen(!open)}>
-            <DropdownItem>Vendors</DropdownItem>
+          <Link to="/makers" onClick={() => setOpen(!open)}>
+            <DropdownItem>Our Volunteers</DropdownItem>
           </Link>
         </DropdownMenu>
       </Dropdown>
@@ -41,6 +41,9 @@ const Menu = ({ open, setOpen }) => {
           </Link>
           <Link to="/" onClick={() => setOpen(!open)}>
             <DropdownItem>Accessories/Other PPE</DropdownItem>
+          </Link>
+          <Link to="/vendors" onClick={() => setOpen(!open)}>
+            <DropdownItem>Vendors</DropdownItem>
           </Link>
         </DropdownMenu>
       </Dropdown>
