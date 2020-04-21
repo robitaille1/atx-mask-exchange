@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import Banner from "../UI/Banner/Banner"
+import ContactForm from "../ContactForm/ContactForm"
 
 const ContactUs = props => (
   <>
@@ -15,13 +16,14 @@ const ContactUs = props => (
           looking for masks for your or your family, please fill out the form on
           the{" "}
           <Link style={{ color: "black" }} to="/mask-directory">
-            directory page
+            request
           </Link>{" "}
           and a mask maker will get in contact with you.
         </p>
         <a style={{ color: "black" }} href="mailto:liam@austinmaskexchange.org">
           liam@austinmaskexchange.org
         </a>
+        <ContactForm />
       </div>
     </Wrapper>
   </>
@@ -36,5 +38,8 @@ const Wrapper = styled.section`
   @media (min-width: 700px) {
     width: 70%;
     margin: 10px auto;
+  }
+  a {
+    text-decoration: underline;
   }
 `
