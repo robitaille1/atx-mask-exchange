@@ -54,7 +54,7 @@ const Home = props => {
         </Content>
       </MaskInfo>
       <Where>
-        <Content style={{ marginTop: "20px" }}>
+        <Content>
           <h3>Where Can I Get A Face Mask In Austin?</h3>
           <p>
             We are keeping a running list of all the mask creators in the
@@ -143,6 +143,10 @@ const Content = styled.div`
   line-height: 1.5;
   @media (min-width: 900px) {
     width: 50%;
+    padding: 1rem 0rem;
+  }
+  @media (min-width: 1200px) {
+    padding: 3rem 0rem;
   }
 
   h3 {
@@ -184,8 +188,8 @@ const Where = styled.section`
   flex-direction: column-reverse;
   line-height: 1.5;
   @media (min-width: 900px) {
-    margin-top: 40px;
-    display: flex;
+    padding: 0rem 2rem;
+    flex-direction: row;
     justify-content: space-between;
   }
   button {
@@ -208,7 +212,7 @@ const ReachOut = styled.section`
   line-height: 1.5;
   @media (min-width: 700px) {
     margin-top: 50px;
-    padding: 3rem 2rem;
+    padding: 0rem 3rem 2rem;
   }
   h3 {
     font-size: 25px;
