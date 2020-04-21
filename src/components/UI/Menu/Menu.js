@@ -31,9 +31,6 @@ const Menu = ({ open, setOpen }) => {
           <Link to="/vendors" onClick={() => setOpen(!open)}>
             <DropdownItem>Vendors</DropdownItem>
           </Link>
-          <Link to="/" onClick={() => setOpen(!open)}>
-            <DropdownItem>Bulk Needs</DropdownItem>
-          </Link>
         </DropdownMenu>
       </Dropdown>
       <Dropdown isOpen={dropdownOpen2} toggle={toggle2}>
