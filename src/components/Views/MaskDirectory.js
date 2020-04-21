@@ -42,7 +42,7 @@ const MaskDirectory = props => (
       frameBorder="0"
       scrolling="yes"
       seamless="seamless"
-      height="1000"
+      height="1200"
       width="100%"
       title="Request a mask - form"
     ></iframe>
