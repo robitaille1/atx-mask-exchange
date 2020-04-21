@@ -63,6 +63,7 @@ const Header = ({ open, setOpen }) => {
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
+          <Link to="/gallery">Gallery</Link>
           <Link to="/contact-us">Contact</Link>
           <Link to="/mask-directory">
             <RequestButton>Request a Mask</RequestButton>

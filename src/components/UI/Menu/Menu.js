@@ -61,6 +61,9 @@ const Menu = ({ open, setOpen }) => {
           </Link>
         </DropdownMenu>
       </Dropdown>
+      <Link to="/gallery" onClick={() => setOpen(!open)}>
+        <p>Gallery</p>
+      </Link>
       <Link to="/contact-us" onClick={() => setOpen(!open)}>
         <p>Contact</p>
       </Link>
