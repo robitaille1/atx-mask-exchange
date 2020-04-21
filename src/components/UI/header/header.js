@@ -59,7 +59,7 @@ const Header = ({ open, setOpen }) => {
                 <Link to="/supplies">Supplies We Need</Link>
               </DropdownItem>
               <DropdownItem>
-                <Link to="/">Contribute</Link>
+                <Link to="/contribute">Contribute</Link>
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>

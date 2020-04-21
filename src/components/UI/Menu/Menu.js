@@ -56,7 +56,7 @@ const Menu = ({ open, setOpen }) => {
           <Link to="/supplies" onClick={() => setOpen(!open)}>
             <DropdownItem>Supplies We Need</DropdownItem>
           </Link>
-          <Link to="/contact-us" onClick={() => setOpen(!open)}>
+          <Link to="/contribute" onClick={() => setOpen(!open)}>
             <DropdownItem>Contribute</DropdownItem>
           </Link>
         </DropdownMenu>
