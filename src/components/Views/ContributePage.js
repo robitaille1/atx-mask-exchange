@@ -66,7 +66,7 @@ const Jumbotron = styled.div`
     text-align: left;
 
     @media (min-width: 700px) {
-      width: 40%;
+      width: 50%;
     }
   }
 
@@ -79,5 +79,6 @@ const Jumbotron = styled.div`
     background: #1b3651;
     padding: 10px;
     border: none;
+    cursor: pointer;
   }
 `
