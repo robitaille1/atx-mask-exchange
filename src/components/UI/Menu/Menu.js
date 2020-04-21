@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import MaskLogo from "../../../images/AustinMask.png"
+// import MaskLogo from "../../../images/AustinMask.png"
 import {
   Dropdown,
   DropdownToggle,
@@ -77,11 +77,11 @@ const Menu = ({ open, setOpen }) => {
           Request a Mask
         </p>
       </Link>
-      <img
+      {/* <img
         style={{ alignSelf: "center" }}
         src={MaskLogo}
         alt="mask logo without text"
-      />
+      /> */}
     </StyledMenu>
   )
 }

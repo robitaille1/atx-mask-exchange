@@ -176,11 +176,12 @@ const ImgDiv = styled.div`
 `
 
 const Where = styled.section`
-  margin-top: 40px;
   padding: 2rem;
-  display: block;
+  display: flex;
+  flex-direction: column-reverse;
   line-height: 1.5;
   @media (min-width: 900px) {
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
   }
@@ -198,10 +199,14 @@ const Where = styled.section`
 `
 
 const ReachOut = styled.section`
-  padding: 3rem 2rem;
+  padding: 0rem 2rem 3rem;
   text-align: center;
   margin-top: 50px;
   line-height: 1.5;
+  @media (min-width: 700px) {
+    margin-top: 50px;
+    padding: 3rem 2rem;
+  }
   h3 {
     font-size: 25px;
   }

@@ -259,6 +259,7 @@ const MakersDescription = styled.p`
   padding: none;
   line-height: 2;
   font-size: 20px;
+  margin-bottom: 60px;
   @media (min-width: 700px) {
     padding: 1rem 3rem;
   }

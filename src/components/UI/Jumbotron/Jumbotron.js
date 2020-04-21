@@ -58,6 +58,7 @@ const Jumbotron = styled.div`
   }
 
   h2 {
+    margin-top: 50px;
     font-size: 42px;
   }
 `

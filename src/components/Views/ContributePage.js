@@ -16,7 +16,7 @@ const contributePage = props => (
       fluid={props.image}
     >
       <Jumbotron>
-        <div>
+        <div style={{ padding: `0px` }}>
           <h2>Contribute</h2>
           <p>
             Contribute here support the website and a pool of funds that we can
@@ -36,7 +36,7 @@ const contributePage = props => (
             <button>Contribute</button>
           </a>
           <br />
-          <p>
+          <p style={{ color: `lightgrey`, fontSize: `10px` }}>
             Please note that we are not a 501c3 organization, we are a group of
             community volunteers working to make sure that everyone in Austin
             has a face mask. Contribution are not tax deductible.
@@ -71,5 +71,12 @@ const Jumbotron = styled.div`
 
   h2 {
     font-size: 42px;
+  }
+
+  button {
+    color: white;
+    background: #1b3651;
+    padding: 10px;
+    border: none;
   }
 `

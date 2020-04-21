@@ -7,22 +7,22 @@ const SuppliesPage = props => (
   <>
     <Banner image={props.image} />
     <div style={{ padding: `2rem` }}>
-      <p style={{ padding: `2rem`, fontSize: `22px` }}>
+      <p style={{ fontSize: `22px` }}>
         Mask Makers go through supplies quickly. If you have supplies on hand
         that you might be willing to donate, the mask makers could use them!
       </p>
-      <SuppliesDisplay>
-        {props.supplies.map(supply => (
-          <SupplyCard key={supply.name}>
-            <Img fluid={supply.image} />
-            <div>
-              <h3>{supply.name}</h3>
-              <p>{supply.description}</p>
-            </div>
-          </SupplyCard>
-        ))}
-      </SuppliesDisplay>
     </div>
+    <SuppliesDisplay>
+      {props.supplies.map(supply => (
+        <SupplyCard key={supply.name}>
+          <Img fluid={supply.image} />
+          <div style={{ padding: `10px` }}>
+            <h3>{supply.name}</h3>
+            <p>{supply.description}</p>
+          </div>
+        </SupplyCard>
+      ))}
+    </SuppliesDisplay>
   </>
 )
 
@@ -42,9 +42,11 @@ const SuppliesDisplay = styled.section`
 `
 
 const SupplyCard = styled.div`
-  text-align: center;
-  margin: 20px;
+  text-align: left;
+  margin: 20px 20px 50px;
   line-height: 2;
+  box-shadow: 0px 1px 2px rgba(0, 16, 75, 0.2);
+  border-radius: 5px;
   h3 {
     font-size: 35px;
   }
