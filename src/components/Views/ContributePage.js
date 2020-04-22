@@ -89,7 +89,7 @@ const Jumbotron = styled.div`
     cursor: pointer;
 
     &:hover {
-      background: #25355198;
+      background: #1b3651d1;
     }
   }
 `
