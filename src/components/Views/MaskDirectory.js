@@ -80,4 +80,12 @@ const Content = styled.div`
   h2 {
     font-size: 33px;
   }
+
+  @media (min-width: 950px) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: 1100px) {
+    margin-top: 50px;
+  }
 `
