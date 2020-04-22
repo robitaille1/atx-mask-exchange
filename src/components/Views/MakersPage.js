@@ -161,6 +161,10 @@ const MakersPage = () => {
         twitter: null,
         reddit: null,
       },
+      links: {
+        mag: "https://www.magellanschool.org/",
+        colab: "http://www.colabcommunitymakers.org/",
+      },
     },
     {
       name: "Megan",
@@ -277,9 +281,9 @@ const MakersDisplay = styled.section`
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @media (min-width: 1000px) {
+  /* @media (min-width: 1000px) {
     grid-template-columns: repeat(4, 1fr);
-  }
+  } */
 `
 const ContactButton = styled.button`
   padding: 10px 20px;

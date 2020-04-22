@@ -4,6 +4,28 @@ import styled from "styled-components"
 const MakerItem = props => (
   <MakerCard>
     <h3>{props.maker.name}</h3>
+    {props.maker.links ? (
+      <>
+        <p>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href={props.maker.links.mag}
+          >
+            Magellan School
+          </a>
+        </p>
+        <p>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href={props.maker.links.colab}
+          >
+            co.lab
+          </a>
+        </p>
+      </>
+    ) : null}
     {props.maker.contact.email ? (
       <h4 style={{ fontSize: `16px`, wordWrap: `break-word` }}>
         {props.maker.contact.email}
