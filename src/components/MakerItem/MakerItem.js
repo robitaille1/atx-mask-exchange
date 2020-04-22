@@ -32,7 +32,7 @@ const MakerItem = props => (
       </h4>
     ) : null}
     {props.maker.contact.reddit ? (
-      <h4>
+      <h5>
         Reddit:{" "}
         <a
           rel="noopener noreferrer"
@@ -42,11 +42,11 @@ const MakerItem = props => (
         >
           {props.maker.contact.reddit}
         </a>
-      </h4>
+      </h5>
     ) : null}
 
     {props.maker.contact.twitter ? (
-      <h4>Twitter: @{props.maker.contact.twitter}</h4>
+      <h5>Twitter: @{props.maker.contact.twitter}</h5>
     ) : null}
     {props.maker.description ? (
       <p style={{ wordWrap: `break-word` }}>{props.maker.description}</p>
@@ -60,7 +60,7 @@ const MakerCard = styled.div`
   text-align: left;
   margin-bottom: 30px;
   padding: 20px;
-  box-shadow: 0px 1px 2px rgba(0, 16, 75, 0.2);
+  /* box-shadow: 0px 1px 2px rgba(0, 16, 75, 0.2); */
   border-radius: 8px;
 
   @media (min-width: 700px) {

@@ -74,7 +74,7 @@ const MakerCard = styled.div`
   text-align: left;
   margin-bottom: 30px;
   padding: 20px;
-  box-shadow: 0px 1px 2px rgba(0, 16, 75, 0.2);
+  /* box-shadow: 0px 1px 2px rgba(0, 16, 75, 0.2); */
   border-radius: 8px;
 
   @media (min-width: 700px) {
