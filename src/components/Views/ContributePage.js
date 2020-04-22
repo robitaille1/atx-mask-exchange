@@ -42,6 +42,7 @@ const contributePage = props => (
             community volunteers working to make sure that everyone in Austin
             has a face mask. Contribution are not tax deductible.
           </p>
+          <br />
         </div>
       </Jumbotron>
     </BackgroundImage>
@@ -66,7 +67,13 @@ const Jumbotron = styled.div`
     text-align: left;
 
     @media (min-width: 700px) {
+      text-align: center;
       width: 50%;
+      margin: 30px auto;
+      p {
+        text-align: left;
+        font-size: 20px;
+      }
     }
   }
 
@@ -80,5 +87,9 @@ const Jumbotron = styled.div`
     padding: 10px;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      background: #25355198;
+    }
   }
 `
