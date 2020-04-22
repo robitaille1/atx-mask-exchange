@@ -42,9 +42,9 @@ const Header = ({ open, setOpen }) => {
               <DropdownItem>
                 <Link to="/mask-faq">Mask FAQ</Link>
               </DropdownItem>
-              {/* <DropdownItem>
-                <Link to="/">Accessories/Other PPE</Link>
-              </DropdownItem> */}
+              <DropdownItem>
+                <Link to="/accessories">Accessories/Other PPE</Link>
+              </DropdownItem>
               <DropdownItem>
                 <Link to="/vendors">Vendors</Link>
               </DropdownItem>

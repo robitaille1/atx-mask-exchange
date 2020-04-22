@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const MakerItem = props => (
   <MakerCard>
-    <h3>{props.maker.name}</h3>
+    <h4>{props.maker.name}</h4>
     {props.maker.links ? (
       <>
         <p>
