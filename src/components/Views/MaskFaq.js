@@ -216,6 +216,7 @@ const Content = styled.div`
 
   a {
     color: black;
+    text-decoration: underline;
   }
 
   @media (min-width: 700px) {
