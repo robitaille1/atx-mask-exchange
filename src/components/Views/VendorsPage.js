@@ -23,25 +23,25 @@ const VendorsPage = () => {
         company: null,
       },
     },
-    // {
-    //   name: "Fashion By Austin",
-    //   description: "Matt Swinney",
-    //   contact: {
-    //     email: "matt@fashionbytexas.com",
-    //     twitter: null,
-    //     reddit: null,
-    //   },
-    //   links: {
-    //     toPurchase: "http://fashionbyaustin.com/buy-masks",
-    //     toDonate: null,
-    //   },
-    //   description2: {
-    //     consumer:
-    //       "Support Austin fashion designers and purchase unique, fun masks via Austin Fashion Week. Masks are $10 each and made by local makers so you know you’re supporting fashion designers in their time of need. Don’t need masks but want to support? Please purchase and just note that you’d like your mask order donated through the Austin Mask Exchange.",
-    //     company:
-    //       "If your company is interested in custom masks for employees, please reach out to Austin Fashion Week founder Matt Swinney. They have the ability to create custom fabric and masks branded to your company for employees, reselling on your own platforms or whatever you’d need them for.",
-    //   },
-    // },
+    {
+      name: "Fashion By Austin",
+      description: "Matt Swinney",
+      contact: {
+        email: "matt@fashionbytexas.com",
+        twitter: null,
+        reddit: null,
+      },
+      links: {
+        toPurchase: "http://fashionbyaustin.com/buy-masks",
+        toDonate: null,
+      },
+      description2: {
+        consumer:
+          "Support Austin fashion designers and purchase unique, fun masks via Austin Fashion Week. Masks are $10 each and made by local makers so you know you’re supporting fashion designers in their time of need. Don’t need masks but want to support? Please purchase and just note that you’d like your mask order donated through the Austin Mask Exchange.",
+        company:
+          "If your company is interested in custom masks for employees, please reach out to Austin Fashion Week founder Matt Swinney. They have the ability to create custom fabric and masks branded to your company for employees, reselling on your own platforms or whatever you’d need them for.",
+      },
+    },
     {
       name: "Rage Panda Pajamas",
       description:
@@ -112,23 +112,23 @@ const VendorsPage = () => {
         company: null,
       },
     },
-    // {
-    //   name: "Megan Webb",
-    //   description: "",
-    //   contact: {
-    //     email: "meganewebb@gmail.com",
-    //     twitter: null,
-    //     reddit: null,
-    //   },
-    //   links: {
-    //     toPurchase: "https://growediblewalls.com/products/cloth-mask",
-    //     toDonate: "https://growediblewalls.com/masks",
-    //   },
-    //   description2: {
-    //     consumer: null,
-    //     company: null,
-    //   },
-    // },
+    {
+      name: "Megan Webb",
+      description: "",
+      contact: {
+        email: "meganewebb@gmail.com",
+        twitter: null,
+        reddit: null,
+      },
+      links: {
+        toPurchase: "https://growediblewalls.com/products/cloth-mask",
+        toDonate: "https://growediblewalls.com/masks",
+      },
+      description2: {
+        consumer: null,
+        company: null,
+      },
+    },
   ]
 
   return (

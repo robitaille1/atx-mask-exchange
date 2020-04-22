@@ -32,20 +32,27 @@ const VendorItem = props => (
 
     {props.maker.links.toDonate ? (
       <p>
-        To Donate:
-        <span style={{ wordWrap: `break-word`, textDecoration: "underline" }}>
-          {props.maker.links.toDonate}
-        </span>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href={props.maker.links.toDonate}
+        >
+          To Donate
+        </a>
       </p>
     ) : null}
     {props.maker.links.toPurchase ? (
       <p>
-        To Purchase:{" "}
-        <span style={{ wordWrap: `break-word`, textDecoration: "underline" }}>
-          {props.maker.links.toPurchase}
-        </span>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href={props.maker.links.toPurchase}
+        >
+          To Purchase
+        </a>
       </p>
     ) : null}
+
     {props.maker.description2.consumer ? (
       <>
         <p>
