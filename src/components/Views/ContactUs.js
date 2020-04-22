@@ -11,14 +11,14 @@ const ContactUs = props => (
       <div>
         <h2>Contact Us</h2>
         <p>
-          We need all the help we can get! Reach out to us if you are mask
+          We need all the help we can get! Reach out to us if you are a mask
           maker, have resources, or anything related to the cause! If you are
           looking for masks for your or your family, please fill out the form on
           the{" "}
           <Link style={{ color: "black" }} to="/mask-directory">
             request
           </Link>{" "}
-          and a mask maker will get in contact with you.
+          page and a mask maker will get in contact with you.
         </p>
         <ContactForm />
       </div>
