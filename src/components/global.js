@@ -27,4 +27,8 @@ summary {
   display: block;
 }
 
+.wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 `

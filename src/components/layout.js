@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   const [open, setOpen] = useState(false)
 
   return (
-    <>
+    <div className="wrap">
       <GlobalStyles open={open} />
       <Header open={open} setOpen={setOpen} />
       <div
@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
           <p>Austin, TX</p>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 
