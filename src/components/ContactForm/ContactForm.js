@@ -84,7 +84,12 @@ export default function ContactUs() {
         <Input
           type="submit"
           value="Send"
-          style={{ background: `#1b3651`, color: `white` }}
+          style={{
+            background: `#1b3651`,
+            color: `white`,
+            cursor: `pointer`,
+            width: `20%`,
+          }}
         />
       </FormGroup>
     </Form>
